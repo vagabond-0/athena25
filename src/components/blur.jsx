@@ -1,16 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-
-const Blur = ({ coordinates}) => (
-  <div
-  style={{
-    ...coordinates,
-    background: "radial-gradient(circle, #EC0A65, #000000)",
-  }}
-   className="z-5 w-96 h-96 sm:w-96 sm:h-96 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px]  rounded-full blur-3xl mx-auto scale-y-150 scale-x-150 opacity-70 "
-  ></div>
-);
+const Blur = () => {
+  return (
+    <div
+      style={{
+        background: "linear-gradient(90deg, #003f5b 0%, #2b4b7d 14%, #5f5195 28%, #98509d 42%, #cc4c91 56%, #f25375 70%, #ff6f4e 84%, #ff9913 100%)",
+        position: "absolute"
+      }}
+      className="z-5 w-screen h-screen sm:w-96 sm:h-96 md:w-96 md:h-96  rounded-full blur-3xl mx-auto scale-y-150 scale-x-150 opacity-70"
+    />
+  );
+};
 
 Blur.propTypes = {
   coordinates: PropTypes.object.isRequired,

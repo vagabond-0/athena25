@@ -1,34 +1,51 @@
-import React from "react";
-import Blur from "./blur";
-import owl from "../assets/iste_owl.png"
-import athena from "../assets/athena header-svg.svg"
+import React from 'react';
+import { motion } from 'framer-motion';
+import owl from "../assets/iste_owl.png";
+import athena from "../assets/athena header-svg.svg";
 
 const Hero = () => {
-  // Determine if the device is a smartphone or a laptop
-  const isMobile = window.innerWidth <= 480;
-
-  // Set coordinates based on the device type
-  const blur1Coordinates = isMobile
-    ? { position: "absolute", bottom: "-10%", left: "-15%" }
-    : { position: "absolute", bottom: "0%", left: "-10%"};
-
-  const blur2Coordinates = isMobile
-    ? { position: "absolute", bottom: "70%", left: "30%" }
-    : { position: "absolute", bottom: "20%", left: "80%"};
-
   return (
-    <section className="min-h-[70vh] relative overflow-hidden text-white font-primary">
+    <section 
+      className="min-h-screen relative overflow-hidden text-white font-primary"
       
-      <img
-        src={owl}
-        alt="Image description"
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full h-full object-contain transition-transform hover:scale-110 duration-1000"
-      />
-      <img
-        src={athena}
-        alt="Athena"
-        className="z-50 absolute top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-transform hover:scale-110 duration-1000 md:w-[1000px] "
-      />
+    >
+      <motion.div 
+        className="absolute inset-0 flex items-center justify-center"
+        initial={{ opacity: 1 }}
+        animate={{ opacity: 1 }}
+      >
+        <motion.img
+          src={owl}
+          alt="Image description"
+          initial={{ y: '100%' }}
+          animate={{ y: 0 }}
+          transition={{
+            duration: 2,
+            ease: [0.43, 0.13, 0.23, 0.96]
+          }}
+          className="w-full h-full object-contain hover:scale-110 duration-1000"
+        />
+      </motion.div>
+      
+      <motion.div
+        className="absolute inset-0 flex items-center justify-center"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2 }}
+      >
+        <motion.img
+          src={athena}
+          alt="Athena"
+          initial={{ scale: 0.5 }}
+          animate={{ scale: 1 }}
+          transition={{
+            delay: 2,
+            duration: 1.5,
+            ease: 'easeOut'
+          }}
+          className="z-50 md:w-[1000px] hover:scale-110 duration-1000"
+        />
+      </motion.div>
     </section>
   );
 };

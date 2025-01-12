@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+
 @font-face {
   font-family: Cyberway Riders;
   src: url("../src/assets/Cyberway Riders.otf") format("opentype");

@@ -15,7 +15,9 @@ import Accommodation from "./routes/accommodation.jsx"
 
 export default function App() {
   return(
-    <div className="bg-black text-white min-h-screen">
+    <div className="bg-black text-white min-h-screen" style={{
+      background: "linear-gradient(90deg, #003f5b 0%, #2b4b7d 14.28%,  #5f5195 28.57%,  #98509d 42.85%,  #cc4c91 57.14%,  #f25375 71.42%,  #ff6f4e 85.71%,  #ff9913 100% )"   
+    }}>
       <BrowserRouter>
         <NavBar/>
         <Routes >
