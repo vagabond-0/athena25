@@ -56,7 +56,7 @@ const EventContent = () => {
                             slidesPerView: 2,
                             spaceBetween: 30
                         },
-                        1024: {
+                        1024:  { 
                             slidesPerView: 3,
                             spaceBetween: 40
                         },
