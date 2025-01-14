@@ -10,8 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "embla-carousel-autoplay": "^8.0.0-rc17",
     "embla-carousel-react": "^8.0.0-rc17",
+    "font-awesome-icons": "^1.6.0",
     "framer-motion": "^10.18.0",
     "localforage": "^1.10.0",
     "match-sorter": "^6.3.1",
@@ -19,7 +22,8 @@
     "react-dom": "^18.2.0",
     "react-router": "^6.21.1",
     "react-router-dom": "^6.21.1",
-    "sort-by": "^0.0.2"
+    "sort-by": "^0.0.2",
+    "swiper": "^11.2.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

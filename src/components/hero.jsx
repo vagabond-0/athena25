@@ -6,7 +6,7 @@ import athena from "../assets/athena header-svg.svg";
 const Hero = () => {
   return (
     <section 
-      className="min-h-screen relative overflow-hidden text-white font-primary"
+      className="min-h-screen relative overflow-hidden text-white font-primary bg-[#080616]"
       
     >
       <motion.div 

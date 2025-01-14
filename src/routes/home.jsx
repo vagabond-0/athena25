@@ -6,6 +6,8 @@ import Blur from "../components/blur.jsx"
 import { Link } from "react-router-dom"
 import { useState } from "react"
 import { motion } from 'framer-motion';
+import EventContent from "../components/EventContent.jsx"
+import CompetitonContent from "../components/CompetitonContent.jsx"
 
 export default function Home() {
   const [toggle, setToggle] = useState();
@@ -42,17 +44,19 @@ export default function Home() {
   };
 
   return (
-    <div className="overflow-hidden">
+    <div className="overflow-hidden text-black ">
       {/* <Blur coordinates={blur1Coordinates} />
       <Blur class="hidden md:block" coordinates={blur2Coordinates} /> */}
       <Hero />
+      <EventContent />
+      <CompetitonContent />
       <div>
-        <div className="md:h-fit h-fit w-full md:flex justify-between font-primary   p-10">
-          <div className="flex justify-start items-start md:w-1/2 w-full">
-            <h2 className="text-xl md:text-6xl font-bold ">About Athena ?</h2>
+        <div className="md:h-fit h-fit w-full md:flex justify-between font-primary   p-10 bg-[#B81033] text-[#FEEED6] ">
+          <div className="flex justify-start items-start md:w-1/2 w-full mb-10">
+            <h2 className="text-2xl md:text-6xl font-bold ">About Athena ?</h2>
           </div>
           <motion.div
-            className="flex justify-end items-end md:w-1/2 w-full text-center flex-wrap text-xl md:text-2xl"
+            className="flex md:justify-end md:items-end md:w-1/2 w-full text-center flex-wrap text-xl md:text-2xl"
             variants={container}
             initial="hidden"
             animate="visible"
