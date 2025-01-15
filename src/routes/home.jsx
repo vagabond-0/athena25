@@ -8,6 +8,7 @@ import { useState } from "react"
 import { motion } from 'framer-motion';
 import EventContent from "../components/EventContent.jsx"
 import CompetitonContent from "../components/CompetitonContent.jsx"
+import TalksessionContent from "../components/TalksessionContent.jsx"
 
 export default function Home() {
   const [toggle, setToggle] = useState();
@@ -50,6 +51,7 @@ export default function Home() {
       <Hero />
       <EventContent />
       <CompetitonContent />
+      <TalksessionContent />
       <div>
         <div className="md:h-fit h-fit w-full md:flex justify-between font-primary   p-10 bg-[#B81033] text-[#FEEED6] ">
           <div className="flex justify-start items-start md:w-1/2 w-full mb-10">
@@ -85,12 +87,12 @@ export default function Home() {
         <Link to="/delegatepass"><div className="bg-yellow-300 text-3xl text-black transform transition-transform hover:scale-110 duration-1000 font-primary text-center py-3 my-3 m-5 rounded-lg relative">Get Delegate Pass</div></Link>
         <Link to="/accommodation"><div className="bg-yellow-300 text-3xl text-black transform transition-transform hover:scale-110 duration-1000 font-primary text-center py-3 my-3 m-5 rounded-lg relative">Accommodation</div></Link>
 
-        <CustomH name="Events" type="1" />
+        {/* <CustomH name="Events" type="1" />
         <Carousel event />
         <CustomH name="Workshops" type="1" />
         <Carousel ws />
         <CustomH name="Talk Session" type="1" />
-        <Carousel talk />
+        <Carousel talk /> */}
         <CustomH name="Sponsors" type="1" />
         <div className="grid place-content-center m-5"><img src="/sponsor1.jpeg" className="w-72" /></div>
       </div>

@@ -10,15 +10,16 @@ import 'swiper/css/autoplay';
 import EventCard from './EventCard';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import eventsDetails from '../content/events';
+import talkshowDetails from '../content/talkshow';
 
-const CompetitonContent = () => {
+const TalksessionContent = () => {
     const [swiperInstance, setSwiperInstance] = useState(null);
 
     return (
         <div className='h-fit flex items-center p-4 md:p-6 lg:p-10'>
             <div className="text-[#FEEED6] font-primary p-4 md:p-6 lg:p-10 border-4 md:border-6 lg:border-8 border-solid border-[#B81033] rounded-lg w-full">
-                <div className="flex  justify-between items-center mb-6 md:mb-8 lg:mb-10 gap-4">
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl ">Competiton</h1>
+                <div className="flex flex-row justify-between items-center mb-6 md:mb-8 lg:mb-10 gap-4">
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl ">Talk Show</h1>
                     <div className="flex items-center gap-4 md:gap-6 lg:gap-10">
                         <FontAwesomeIcon
                             icon={faChevronLeft}
@@ -72,7 +73,7 @@ const CompetitonContent = () => {
                     centeredSlides={true}
                     loop={true} 
                 >
-                    {eventsDetails.map((e, index) => (
+                    {talkshowDetails.map((e, index) => (
                         <SwiperSlide key={index} className="flex justify-center">
                             <EventCard imglink={e.posters[0]} />
                         </SwiperSlide>
@@ -83,4 +84,4 @@ const CompetitonContent = () => {
     );
 };
 
-export default CompetitonContent;
+export default TalksessionContent;

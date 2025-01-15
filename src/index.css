@@ -2,6 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+.swiper-pagination {
+  position: relative !important;
+  bottom: -20px !important;
+  margin-top: 20px;
+}
+
+.swiper-pagination-bullet {
+  background: #B81033 !important;
+  width: 10px !important;
+  height: 10px !important;
+  margin: 0 5px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FEEED6 !important;
+}
 
 @font-face {
   font-family: Cyberway Riders;
