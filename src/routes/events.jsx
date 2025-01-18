@@ -1,20 +1,26 @@
 import eventsDetails from "../content/events.js"
 import Card from "../components/card.jsx"
 import CustomH from "../components/customh.jsx"
+import EventCard from "../components/EventCard.jsx"
 export default function Events() {
-  const eventdata_d1 = eventsDetails.filter((e)=> {
-    return e.date == "19-01-2024"
-  })
-  return(
-    <div className="w-screen  grid">
-      <CustomH name="Events" type="1"/>
-      <div className='grid justify-items-center grid-cols-1 md:grid-cols-3 '>
-    {eventsDetails.map((event) => (
-            <Card e eventid={event.id}/>
-        ))}
+
+  return ( 
+    <div className="w-screen min-h-screen bg-[#B81033]  p-10 ">
+      <div className="text-6xl">
+        <h1>Events</h1>
+      </div>
+    <div className="flex flex-col  justify-center gap-10 rounded-lg items-center pl-4 pr-4 ">
+      {
+        eventsDetails.map((e) =>{
+          return(
+            <EventCard event={e}/>
+          )
+          
+        })
+      }
+     
     </div>
-      
     </div>
   )
-  
+
 }

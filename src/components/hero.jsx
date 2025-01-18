@@ -1,22 +1,45 @@
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useScroll, useTransform } from 'framer-motion';
+import { ChevronDown } from 'lucide-react';
 import owl from "../assets/iste_owl.png";
-import athena from "../assets/athena header-svg.svg";
 
 const Hero = () => {
+  const { scrollY } = useScroll();
+  const opacity = useTransform(scrollY, [0, 300], [1, 0]);
+  const y = useTransform(scrollY, [0, 300], ['0%', '20%']);
+
   return (
-    <section 
-      className="min-h-screen relative overflow-hidden text-white font-primary bg-[#080616]"
-      
-    >
-      <motion.div 
+    <section className="h-screen relative overflow-hidden text-white font-primary bg-[#080616] sticky top-0">
+      {/* Athena Text */}
+      <motion.div
         className="absolute inset-0 flex items-center justify-center"
-        initial={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
+        transition={{ delay: 1 }}
+        style={{ marginTop: '-20vh', opacity }}
+      >
+        <motion.h1
+          initial={{ scale: 0.5 }}
+          animate={{ scale: 1 }}
+          transition={{
+            delay: 1,
+            duration: 1.5,
+            ease: 'easeOut'
+          }}
+          className="text-6xl font-bold z-10 hover:scale-110 duration-1000"
+        >
+          Athena 25
+        </motion.h1>
+      </motion.div>
+
+      {/* Owl Image */}
+      <motion.div
+        className="absolute inset-0 flex items-center justify-center"
+        style={{ opacity, y }}
       >
         <motion.img
           src={owl}
-          alt="Image description"
+          alt="Owl illustration"
           initial={{ y: '100%' }}
           animate={{ y: 0 }}
           transition={{
@@ -26,25 +49,26 @@ const Hero = () => {
           className="w-full h-full object-contain hover:scale-110 duration-1000"
         />
       </motion.div>
-      
-      <motion.div
-        className="absolute inset-0 flex items-center justify-center"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2 }}
+
+      {/* Scroll Indicator */}
+      <motion.div 
+        className="absolute bottom-10 left-0 right-0 flex flex-col items-center"
+        style={{ opacity }}
       >
-        <motion.img
-          src={athena}
-          alt="Athena"
-          initial={{ scale: 0.5 }}
-          animate={{ scale: 1 }}
-          transition={{
-            delay: 2,
-            duration: 1.5,
-            ease: 'easeOut'
+        <motion.div
+          animate={{
+            y: [0, 10, 0]
           }}
-          className="z-50 md:w-[1000px] hover:scale-110 duration-1000"
-        />
+          transition={{
+            duration: 1.5,
+            repeat: Infinity,
+            repeatType: "reverse"
+          }}
+          className="cursor-pointer text-center"
+        >
+          {/* <ChevronDown size={32} className="mb-2" />
+          <p className="text-sm">Scroll Down</p> */}
+        </motion.div>
       </motion.div>
     </section>
   );

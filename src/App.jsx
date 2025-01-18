@@ -19,7 +19,7 @@ export default function App() {
       background: "#080616"   
     }}>
       <BrowserRouter>
-        <NavBar/>
+       
         <Routes >
           <Route path="/" element={<Home/>} />
           <Route path="/event/:eventid" element={<EventPage/>}/>
