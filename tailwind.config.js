@@ -19,6 +19,7 @@ export default {
 
       fontFamily: {
         primary: "Village",
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },

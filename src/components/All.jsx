@@ -12,13 +12,13 @@ const All = () => {
       description: "Step right up to a spectacular showcase of talent! From technical triumphs to creative conquests, our events promise excitement at every turn. Join the grandest carnival of innovation where every participant is a star!"
     },
     {
-      name: "Competition",
-      path: "/competition",
+      name: "Workshops",
+      path: "/workshops",
       description: "Enter the arena of excellence where brilliant minds compete! Challenge yourself in coding battles, design showdowns, and innovation face-offs. Glory awaits the bold who dare to compete!"
     },
     {
       name: "Talk Session",
-      path: "/talks",
+      path: "/talkshows",
       description: "Gather 'round for mind-bending sessions with industry titans and thought leaders! Experience captivating discussions that will inspire, enlighten, and transform your perspective on technology."
     }
   ];
@@ -52,7 +52,7 @@ const All = () => {
   };
 
   return (
-    <div className='md:min-h-screen flex flex-col md:flex-row gap-10 justify-center items-center bg-[#B81033] p-10'>
+    <div className='md:min-h-screen flex flex-col md:flex-row gap-10 justify-center items-center bg-[#B81033] p-10 font-poppins'>
       {AllContent.map((all, index) => (
         <motion.div
           key={index}
@@ -81,7 +81,7 @@ const All = () => {
             <div className='absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-200'></div>
             <div className='absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-200'></div>
 
-            <h1 className='text-4xl font-bold text-yellow-300 text-center mb-4 z-10 group-hover:opacity-0 transition-opacity duration-300'>
+            <h1 className='text-4xl  text-yellow-300 text-center mb-4 z-10 group-hover:opacity-0 transition-opacity duration-300'  style={{fontFamily:"Retro Signed"}}>
               {all.name}
             </h1>
 

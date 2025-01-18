@@ -10,7 +10,7 @@ const Hero = () => {
 
   return (
     <section className="h-screen relative overflow-hidden text-white font-primary bg-[#080616] sticky top-0">
-      {/* Athena Text */}
+     
       <motion.div
         className="absolute inset-0 flex items-center justify-center"
         initial={{ opacity: 0 }}
@@ -26,7 +26,8 @@ const Hero = () => {
             duration: 1.5,
             ease: 'easeOut'
           }}
-          className="text-6xl font-bold z-10 hover:scale-110 duration-1000"
+          className="text-6xl  z-10 hover:scale-110 duration-1000"
+          style={{fontFamily:"Retro Signed"}}
         >
           Athena 25
         </motion.h1>

@@ -1,20 +1,26 @@
-import workshopDetails from "../content/workshops.js"
+import eventsDetails from "../content/events.js"
 import Card from "../components/card.jsx"
 import CustomH from "../components/customh.jsx"
-export default function Events() {
-  const eventdata_d1 = workshopDetails.filter((e)=> {
-    return e.date == "19-01-2024"
-  })
-  return(
-    <div className=" w-screen ">
-      <CustomH name="Workshops" type="1"/>
-      <div className='grid grid-cols-1 md:grid-cols-3 px-8 '>
-    {workshopDetails.map((event) => (
-            <Card eventid={event.id} w/>
-        ))}
-    </div>
-      
+import EventCard from "../components/EventCard.jsx"
+import workshopDetails from "../content/workshops.js"
+export default function Workshops() {
+  return (
+    <div className="w-screen min-h-screen bg-[#B81033]  p-10 ">
+      <div className="text-6xl">
+        <h1  style={{fontFamily:" Retro Signed"}}>Workshop</h1>
+      </div>
+      <div className="flex flex-col  justify-center gap-10 rounded-lg items-center pl-4 pr-4 ">
+        {
+        workshopDetails.map((e) => {
+            return (
+              <EventCard event={e} />
+            )
+
+          })
+        }
+
+      </div>
     </div>
   )
-  
+
 }

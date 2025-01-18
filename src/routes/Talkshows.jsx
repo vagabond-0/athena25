@@ -1,17 +1,16 @@
-import eventsDetails from "../content/events.js"
-import Card from "../components/card.jsx"
-import CustomH from "../components/customh.jsx"
-import EventCard from "../components/EventCard.jsx"
-export default function Events() {
+import React from 'react'
+import talkshowDetails from '../content/talkshow'
+import EventCard from '../components/EventCard'
 
+const Talkshows = () => {
   return (
     <div className="w-screen min-h-screen bg-[#B81033]  p-10 ">
       <div className="text-6xl">
-        <h1 style={{fontFamily:" Retro Signed"}}>Events</h1>
+        <h1 style={{fontFamily:" Retro Signed"}}>Talk Show</h1>
       </div>
       <div className="flex flex-col  justify-center gap-10 rounded-lg items-center pl-4 pr-4 ">
         {
-          eventsDetails.map((e) => {
+          talkshowDetails.map((e) => {
             return (
               <EventCard event={e} />
             )
@@ -22,5 +21,6 @@ export default function Events() {
       </div>
     </div>
   )
-
 }
+
+export default Talkshows

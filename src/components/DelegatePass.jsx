@@ -18,7 +18,7 @@ const DelegatePass = () => {
   return (
     <div
       ref={ref}
-      className="h-fit bg-[#B81033] p-10 text-center"
+      className="h-fit bg-[#B81033] p-10 text-center font-poppins"
     >
       {/* Delegate Pass Section */}
       <motion.div 
@@ -27,7 +27,7 @@ const DelegatePass = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <h1 className="text-5xl text-white font-bold">Delegate Pass</h1>
+        <h1 className="text-5xl text-white "  style={{fontFamily:"Retro Signed"}}>Delegate Pass</h1>
       </motion.div>
       
       <motion.div
@@ -47,9 +47,9 @@ const DelegatePass = () => {
         animate={isInView ? "visible" : "hidden"}
         className="mb-12"
       >
-        <button 
-          className="bg-white text-[#B81033] px-8 py-3 rounded-full font-semibold text-xl hover:bg-red-100 transition-colors duration-200"
-          onClick={() => console.log('Buy clicked')}
+         <button 
+          className="bg-transparent text-white border-2 border-white px-8 py-3 rounded-full font-semibold text-xl hover:bg-white hover:text-[#B81033] transition-colors duration-200"
+          onClick={() => console.log('Book room clicked')}
         >
           Buy Now
         </button>
@@ -62,7 +62,7 @@ const DelegatePass = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <h2 className="text-4xl text-white font-bold mb-4">Book Your Room</h2>
+        <h2 className="text-4xl text-white  mb-4"  style={{fontFamily:"Retro Signed"}}>Book Your Room</h2>
         <p className="text-white/90 text-lg leading-relaxed max-w-lg mx-auto mb-6">
           Need accommodation during the event? Reserve your room now for a comfortable stay. Special rates available for event delegates.
         </p>

@@ -35,7 +35,7 @@ const AboutAthena = () => {
   };
 
   return (
-    <div className='min-h-screen w-full bg-gradient-to-b from-[#080616] to-[#B81033] text-white flex flex-col justify-center items-center p-4 md:p-8'>
+    <div className='min-h-screen w-full bg-gradient-to-b from-[#080616] to-[#B81033] text-white flex flex-col justify-center items-center p-4 md:p-8 font-poppins'>
       <motion.div
         className='max-w-4xl mx-auto text-center'
         variants={containerVariants}
@@ -48,7 +48,8 @@ const AboutAthena = () => {
       >
         <motion.h1
           variants={textVariants}
-          className='text-4xl md:text-5xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-yellow-400'
+          className='text-4xl md:text-5xl  mb-8 bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 to-yellow-400'
+          style={{fontFamily:"Retro Signed"}}
         >
           Athena is HERE!
         </motion.h1>
