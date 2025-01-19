@@ -52,7 +52,7 @@ const All = () => {
   };
 
   return (
-    <div className='md:min-h-screen flex flex-col md:flex-row gap-10 justify-center items-center bg-[#B81033] p-10 font-poppins'>
+    <div className=' flex flex-col md:flex-row gap-10 justify-center items-center bg-[#B81033] p-10 font-poppins'>
       {AllContent.map((all, index) => (
         <motion.div
           key={index}
