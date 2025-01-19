@@ -1,7 +1,11 @@
 import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
-import owl from "../assets/iste_owl.png";
+import owl from "../assets/owl3.png";
+
+import logo from "../assets/logo.png"
+
+
 
 const Hero = () => {
   const { scrollY } = useScroll();
@@ -9,10 +13,31 @@ const Hero = () => {
   const y = useTransform(scrollY, [0, 300], ['0%', '20%']);
 
   return (
-    <section className="h-screen relative overflow-hidden text-white font-primary bg-[#080616] sticky top-0 ">
-     
+
+    <section className="h-screen relative overflow-hidden text-white font-primary bg-[#080616] ">
+     <div className="absolute z-0 flex justify-center w-screen ">
+      <img
+        src={logo}
+        alt="ISTE Logo"
+        className="md:w-3/6 w-[2000px]"
+        style={{
+          animation: "spin-slow 50s linear infinite", 
+          zIndex: 1, 
+          
+          height: 'auto',
+          opacity:0.1,  
+        }}
+      />
+      <style jsx>{`
+        @keyframes spin-slow {
+          from { transform: rotate(0deg); }
+          to { transform: rotate(360deg); }
+        }
+      `}</style>
+    </div>
+
       <motion.div
-        className="absolute inset-0 flex items-center justify-center"
+        className="absolute inset-0 flex items-end justify-center mb-20"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
@@ -26,8 +51,8 @@ const Hero = () => {
             duration: 1.5,
             ease: 'easeOut'
           }}
-          className="text-6xl  z-10 hover:scale-110 duration-1000"
-          style={{fontFamily:"Retro Signed"}}
+          className="text-6xl md:text-7xl z-10 hover:scale-110 duration-1000 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#cd7722]  to-[#fda50f]"
+          style={{fontFamily:"flareserif"}}
         >
           Athena 25
         </motion.h1>
@@ -47,7 +72,7 @@ const Hero = () => {
             duration: 2,
             ease: [0.43, 0.13, 0.23, 0.96]
           }}
-          className="w-full h-full object-contain hover:scale-110 duration-1000"
+          className="w-full  h-full object-contain hover:scale-110 duration-1000"
         />
       </motion.div>
 
