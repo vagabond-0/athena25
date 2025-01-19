@@ -85,7 +85,7 @@ export default function WorkshopPage() {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      className="min-h-screen p-4 md:p-8 lg:p-12 bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900"
+      className="min-h-screen p-4 md:p-8 lg:p-12 bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 font-poppins"
     >
       <div className="max-w-7xl mx-auto">
         <motion.h1
