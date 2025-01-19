@@ -1,92 +1,145 @@
+import React, { useState, useRef } from 'react';
 import { useLocation, Link } from "react-router-dom";
-import CustomH from "../components/customh.jsx";
-import eventsDetails from "../content/events.js"
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Navigation } from 'swiper/modules';
+import { motion } from 'framer-motion';
+import eventsDetails from "../content/events.js";
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
+const CustomCarousel = ({ event, showGuidelines, guidelines, onSwiperInit }) => {
+  const slides = event;
+  
+  return (
+    <Swiper
+      onSwiper={onSwiperInit}
+      spaceBetween={20}
+      centeredSlides={true}
+      pagination={{
+        clickable: false,
+        bulletClass: 'swiper-pagination-bullet !bg-yellow-300',
+      }}
+      navigation={false}
+      modules={[Pagination, Navigation]}
+      className="w-full max-w-full h-64 sm:h-72 md:h-96 lg:h-[500px]"
+    >
+      {slides.map((src, index) => (
+        <SwiperSlide key={index}>
+          <motion.div 
+            initial={{ scale: 0.9, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            className="h-full w-full rounded-lg flex items-center justify-center overflow-hidden shadow-lg"
+          >
+            <img
+              src={src}
+              alt={`Slide ${index + 1}`}
+              className="object-cover w-full h-full rounded-lg transform hover:scale-105 transition-transform duration-300"
+            />
+          </motion.div>
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+};
 
 export default function EventPage() {
+  const [showGuidelines, setShowGuidelines] = useState(false);
+  const swiperRef = useRef(null);
   const location = useLocation();
   const eventid = location.pathname.split("/");
-  let event = eventsDetails.filter((e) => {
-    return e.id == eventid[2];
-  });
-  event = event[0];
-  //console.log(event)
-  return (
+  let event = eventsDetails.filter((e) => e.id == eventid[2])[0];
 
-    <div className="text-center md:px-10 px-3 grid place-items-center md:min-h-screen md:grid-rows-3">
-        <div className="mix-blend-lighten font-primary text-center text-3xl md:text-4xl m-5">
+  const handleSwiperInit = (swiper) => {
+    swiperRef.current = swiper;
+  };
+
+  const toggleGuidelines = () => {
+    const newShowGuidelines = !showGuidelines;
+    setShowGuidelines(newShowGuidelines);
+    if (swiperRef.current) {
+      setTimeout(() => {
+        newShowGuidelines ? swiperRef.current.slideNext() : swiperRef.current.slidePrev();
+      }, 0);
+    }
+  };
+
+  return (
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="min-h-screen p-4 md:p-8 lg:p-12 bg-gradient-to-br from-purple-900 via-indigo-900 to-blue-900 font-poppins"
+    >
+      <div className="max-w-full md:max-w-screen-lg mx-auto space-y-6 md:space-y-12">
+        <motion.h1 
+          initial={{ y: -50 }}
+          animate={{ y: 0 }}
+          className="text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 md:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-red-300 to-pink-300"
+          style={{ fontFamily: "Retro Signed" }}
+        >
           {event.name}
-        </div>
-      <div className="text-left grid grid-rows-2 gap-y-2  md:grid md:grid-cols-2 md:h-96 font-mono text-lg">
-        <div className="grid justify-center md:block">
-          <CustomCarousel event={event.posters}/>
-        </div>
-        <div className="flex justify-center">
-          <div className="">
-            <div className="mb-2">
-              <span className="text-3xl font-semibold font-serif underline">
-                Description
-              </span>
-              <div className="mt-4">{event.details}</div>
-              {event.rulebook ? 
-                <a href={event.rulebook} target="_blank"><div className="text-yellow-300 text-xl font-bold border my-10 py-1 text-center rounded-md">Download RuleBook</div></a>
-                : null}
-            </div>
-            <div className="text-xl font-bold text-yellow-300 mt-4">Reg.Fee : {event.price}</div>
-            <div className="text-xl font-bold text-yellow-300 mt-2">Deadline: {event.deadline}</div>
-            <div className="mt-7">
-              <div className="font-bold my-2 text-lg">Date : {event.date}</div>
-              <div className="underline font-bold text-lg">Coordinators </div>
-              <div>
-                {event.coordinators[0].name}: {event.coordinators[0].phone}
+        </motion.h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div className="space-y-4">
+            <CustomCarousel 
+              event={event.posters} 
+              guidelines={event.guidelines || []}
+              showGuidelines={showGuidelines}
+              onSwiperInit={handleSwiperInit}
+            />
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={toggleGuidelines}
+              className="w-full px-4 py-2 md:w-auto md:px-8 md:py-3 bg-gradient-to-r from-yellow-300 to-yellow-400 rounded-full text-black font-bold text-sm md:text-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+            >
+              {showGuidelines ? '🎪 Close Guidelines' : '🎪 See Guidelines'}
+            </motion.button>
+          </div>
+
+          <div className="bg-white/10 backdrop-blur-lg rounded-lg p-4 md:p-6 lg:p-8 text-white shadow-lg">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-yellow-300 border-b-2 border-yellow-300 pb-2">
+              🎭 Event Details
+            </h2>
+            <div className="space-y-4 text-sm sm:text-base md:text-lg">
+              <p>{event.details}</p>
+              {event.rulebook && (
+                <a 
+                  href={event.rulebook} 
+                  target="_blank"
+                  className="block mt-4 bg-gradient-to-r from-red-500 to-pink-500 px-4 py-2 rounded-lg text-white font-bold text-center transform hover:scale-105 transition-transform"
+                >
+                  📚 Download Rulebook
+                </a>
+              )}
+              <div className="space-y-2">
+                <p className="text-yellow-300 font-bold">💰 Registration Fee: {event.price}</p>
+                <p className="text-yellow-300 font-bold">⏰ Deadline: {event.deadline}</p>
+                <p className="font-bold">📅 Date: {event.date}</p>
               </div>
-              <div>
-                {event.coordinators[1].name}: {event.coordinators[1].phone}
+              <div className="mt-4">
+                <h3 className="text-lg sm:text-xl font-bold text-yellow-300 mb-2">🎪 Event Coordinators</h3>
+                {event.coordinators.map((coordinator, index) => (
+                  <p key={index}>{coordinator.name}: {coordinator.phone}</p>
+                ))}
               </div>
             </div>
           </div>
         </div>
+
+        <motion.div 
+          className="text-center"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <Link to={event.link}>
+            <button className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 text-black font-bold text-base sm:text-lg md:text-xl px-6 py-3 md:px-12 md:py-4 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
+              🎟️ Register Now!
+            </button>
+          </Link>
+        </motion.div>
       </div>
-      <Link to={event.link}><div className="my-5 mb-10 bg-yellow-300 rounded-xl text-black font-primary w-52 px-5 py-2 text-xl text-center">Register</div></Link>
-    </div>
+    </motion.div>
   );
-}
-
-import useEmblaCarousel from "embla-carousel-react";
-import Autoplay from 'embla-carousel-autoplay';
-import Card from "../components/card.jsx"
-
-
-
- function CustomCarousel({event}) {
-
-  const autoplayOption = {
-    delay: 4000,
-    rootNode: (emblaRoot) => emblaRoot.parentElement
-  }
-  
-  const [emblaRef ] = useEmblaCarousel({ loop: true },[Autoplay(autoplayOption)]);
-return(
-  <div className='embla embla__viewport md:m-10' ref={emblaRef}>
-    <div className='flex flex-row '>
-    {event.map((event, key) => (
-        <CustomCard src={event}/>
-        ))}
-    </div>
-  </div>
-);}
-
-
-function CustomCard({src}){
-  return(
-
-    <div className="embla__slide p-5 w-[400px]" >
-      <div
-        className="group embla__slide__img h-96 bg-white rounded-lg text-black grid place-content-center"
-      >
-           <img src={src} className="object-fill "/>
-      </div>
-    </div>
-  
-  )
 }

@@ -26,7 +26,7 @@ const DelegatePass = () => {
             backgroundRepeat: "no-repeat" // Prevent repeating
           }}
     >
-      {/* Delegate Pass Section */}
+     
       <motion.div 
         className="mb-6"
         variants={itemVariants}
