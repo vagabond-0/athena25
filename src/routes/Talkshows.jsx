@@ -12,7 +12,7 @@ const Talkshows = () => {
         {
           talkshowDetails.map((e) => {
             return (
-              <EventCard event={e} />
+              <EventCard event={e} t />
             )
 
           })

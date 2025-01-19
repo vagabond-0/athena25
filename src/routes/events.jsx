@@ -5,7 +5,7 @@ import EventCard from "../components/EventCard.jsx"
 export default function Events() {
 
   return (
-    <div className="w-screen min-h-screen bg-[#B81033]  p-10 ">
+    <div className="w-screen min-h-screen   p-10 ">
       <div className="text-6xl">
         <h1 style={{fontFamily:" Retro Signed"}}>Events</h1>
       </div>
@@ -13,7 +13,7 @@ export default function Events() {
         {
           eventsDetails.map((e) => {
             return (
-              <EventCard event={e} />
+              <EventCard event={e} e />
             )
 
           })

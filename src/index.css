@@ -9,6 +9,12 @@
     url("./Font/Retro Signed.otf") format("opentype");
   font-weight: normal;
 }
+@font-face {
+  font-family: "Flareserif";
+  src: local("Flare"),
+    url("./Font/Flareserif 821 Bold.otf") format("opentype");
+  font-weight: BOld;
+}
 
 .swiper-pagination {
   position: relative !important;

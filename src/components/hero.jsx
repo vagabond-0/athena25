@@ -13,6 +13,7 @@ const Hero = () => {
   const y = useTransform(scrollY, [0, 300], ['0%', '20%']);
 
   return (
+
     <section className="h-screen relative overflow-hidden text-white font-primary bg-[#080616] ">
      <div className="absolute z-0 flex justify-center w-screen ">
       <img
@@ -34,6 +35,7 @@ const Hero = () => {
         }
       `}</style>
     </div>
+
       <motion.div
         className="absolute inset-0 flex items-end justify-center mb-20"
         initial={{ opacity: 0 }}

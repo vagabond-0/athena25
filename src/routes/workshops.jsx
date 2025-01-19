@@ -13,7 +13,7 @@ export default function Workshops() {
         {
         workshopDetails.map((e) => {
             return (
-              <EventCard event={e} />
+              <EventCard event={e} w />
             )
 
           })
