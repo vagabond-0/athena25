@@ -4,7 +4,7 @@ import EventCard from '../components/EventCard'
 
 const Talkshows = () => {
   return (
-    <div className="w-screen min-h-screen bg-[#B81033]  p-10 ">
+    <div className="w-screen min-h-screen  p-10 ">
       <div className="text-6xl">
         <h1 style={{fontFamily:" Retro Signed"}}>Talk Show</h1>
       </div>
