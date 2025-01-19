@@ -2,6 +2,8 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
+import bgcarnival from "../assets/bgcarnival.jpg";
+
 const All = () => {
   const navigate = useNavigate();
 
@@ -52,7 +54,15 @@ const All = () => {
   };
 
   return (
-    <div className='md:min-h-screen flex flex-col md:flex-row gap-10 justify-center items-center bg-[#B81033] p-10 font-poppins'>
+    <div className='md:min-h-screen flex flex-col md:flex-row gap-10 justify-center items-center  p-10 font-poppins'
+    style={{
+      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${bgcarnival})`, // Set the background image
+      backgroundSize: "cover", // Ensure the image covers the container
+      backgroundPosition: "center", // Center the image
+      backgroundRepeat: "no-repeat" // Prevent repeating
+    }}
+    >
+      
       {AllContent.map((all, index) => (
         <motion.div
           key={index}

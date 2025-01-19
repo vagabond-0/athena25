@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
-
+import bgcarnival1 from "../assets/bgcarnival1.jpg";
 const DelegatePass = () => {
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
@@ -18,7 +18,13 @@ const DelegatePass = () => {
   return (
     <div
       ref={ref}
-      className="h-fit bg-[#B81033] p-10 text-center font-poppins"
+      className="h-fit  p-10 text-center font-poppins "
+      style={{
+            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${bgcarnival1})`, // Set the background image
+            backgroundSize: "cover", // Ensure the image covers the container
+            backgroundPosition: "center", // Center the image
+            backgroundRepeat: "no-repeat" // Prevent repeating
+          }}
     >
       {/* Delegate Pass Section */}
       <motion.div 
