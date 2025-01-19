@@ -20,7 +20,7 @@ const DelegatePass = () => {
       ref={ref}
       className="h-fit bg-[#B81033] p-10 text-center font-poppins"
     >
-      {/* Delegate Pass Section */}
+     
       <motion.div 
         className="mb-6"
         variants={itemVariants}

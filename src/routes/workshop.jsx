@@ -149,7 +149,7 @@ export default function WorkshopPage() {
             </button>
           </Link>
         </motion.div>
-      </div>
+      </div>  
     </motion.div>
   );
 }
