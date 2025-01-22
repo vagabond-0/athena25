@@ -72,7 +72,7 @@ const All = () => {
           whileHover="hover"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
-          transition={{ duration: 4 }}
+          transition={{ duration: 2 }}
           viewport={{
             once: false,
             amount: 0.3
