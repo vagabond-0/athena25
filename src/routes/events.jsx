@@ -2,8 +2,11 @@ import eventsDetails from "../content/events.js"
 import Card from "../components/card.jsx"
 import CustomH from "../components/customh.jsx"
 import EventCard from "../components/EventCard.jsx"
+import { useEffect } from "react";
 export default function Events() {
-
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   return (
     <div className="w-screen min-h-screen   p-10 ">
       <div className="text-6xl">

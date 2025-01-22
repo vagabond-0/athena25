@@ -3,7 +3,11 @@ import Card from "../components/card.jsx"
 import CustomH from "../components/customh.jsx"
 import EventCard from "../components/EventCard.jsx"
 import workshopDetails from "../content/workshops.js"
+import { useEffect } from "react";
 export default function Workshops() {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   return (
     <div className="w-screen min-h-screen  p-10 ">
       <div className="sm:text-6xl text-5xl p-4">

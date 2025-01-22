@@ -1,8 +1,12 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 import talkshowDetails from '../content/talkshow'
 import EventCard from '../components/EventCard'
 
 const Talkshows = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+  
   return (
     <div className="w-screen min-h-screen  p-10 ">
       <div className="text-6xl">
