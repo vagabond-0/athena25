@@ -48,7 +48,7 @@ const Hero = () => {
             ease: 'easeOut',
           }}
           className="text-6xl md:text-7xl z-10 hover:scale-110 duration-1000 font-bold bg-clip-text text-transparent bg-gradient-to-r from-[#cd7722] to-[#fda50f] strobe-outline"
-          style={{ fontFamily: "sans-serif" }}
+          style={{ fontFamily: "Flareserif 821 Bold" }}
         >
           Athena 25
         </motion.h1>
@@ -62,7 +62,7 @@ const Hero = () => {
             }
           }
           .strobe-outline {
-            -webkit-text-stroke-width: 4px;
+            -webkit-text-stroke-width: 2px;
             -webkit-text-stroke-color:[#fda50f];
             color: transparent; /* Ensure only the stroke is visible */
             animation: strobe-outline 1.5s infinite alternate;
