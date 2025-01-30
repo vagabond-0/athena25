@@ -25,51 +25,23 @@ const All = () => {
     }
   ];
 
-  const boxVariants = {
-    hover: {
-      scale: 1.05,
-      transition: {
-        duration: 0.3,
-        ease: "easeOut"
-      }
-    }
-  };
-
-  const descriptionVariants = {
-    hidden: {
-      opacity: 0,
-      y: 20
-    },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: {
-        duration: 0.3
-      }
-    }
-  };
-
   const handleCardClick = (path) => {
     navigate(path);
   };
 
   return (
-
-    <div className='md:min-h-screen flex flex-col md:flex-row gap-10 justify-center items-center  p-10 font-poppins'
-    style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${bgcarnival})`, // Set the background image
-      backgroundSize: "cover", // Ensure the image covers the container
-      backgroundPosition: "center", // Center the image
-      backgroundRepeat: "no-repeat" // Prevent repeating
-    }}
+    <div className='md:min-h-screen flex flex-col md:flex-row gap-10 justify-center items-center p-10 font-poppins'
+      style={{
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${bgcarnival})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat"
+      }}
     >
-      
       {AllContent.map((all, index) => (
         <motion.div
           key={index}
-          className='relative w-64 h-80 group perspective-1000 cursor-pointer'
-          variants={boxVariants}
-          whileHover="hover"
+          className='relative w-64 h-80 perspective-1000 cursor-pointer'
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 2 }}
@@ -86,27 +58,18 @@ const All = () => {
                      shadow-lg shadow-black/30
                      overflow-hidden
                      relative
-                     hover:shadow-xl hover:shadow-black/40
                      transition-shadow duration-300'
           >
             <div className='absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-200'></div>
             <div className='absolute bottom-0 left-0 w-full h-2 bg-gradient-to-r from-yellow-200 via-yellow-400 to-yellow-200'></div>
 
-            <h1 className='text-4xl  text-yellow-300 text-center mb-4 z-10 group-hover:opacity-0 transition-opacity duration-300'  style={{fontFamily:"Retro Signed"}}>
+            <h1 className='text-4xl text-yellow-300 text-center mb-4 z-10' style={{fontFamily:"Retro Signed"}}>
               {all.name}
             </h1>
 
-            <motion.div
-              className='absolute inset-0 bg-black/90 p-6 flex items-center justify-center
-                      opacity-0 group-hover:opacity-100 transition-opacity duration-300'
-              initial="hidden"
-              whileHover="visible"
-              variants={descriptionVariants}
-            >
-              <p className='text-yellow-300 text-lg text-center'>
-                {all.description}
-              </p>
-            </motion.div>
+            {/* <p className='text-yellow-300 text-lg text-center px-6'>
+              {all.description}
+            </p> */}
 
             <div className='absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-yellow-300'></div>
             <div className='absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-yellow-300'></div>
