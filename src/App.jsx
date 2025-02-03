@@ -13,6 +13,7 @@ import DelegatePass from "./routes/delegatepass.jsx"
 import TallkShowPage from "./routes/talkshow.jsx"
 import Accommodation from "./routes/accommodation.jsx"
 import Talkshows from "./routes/Talkshows.jsx"
+import Informals from "./routes/Informals.jsx"
 
 export default function App() {
   return(
@@ -33,6 +34,7 @@ export default function App() {
           <Route path="/details" element={<Details/>}/>
           <Route path="/delegatepass" element={<DelegatePass/>}/>
           <Route path="/accommodation" element={<Accommodation/>}/>
+          <Route path="/informals" element={<Informals />}/>
         </Routes>
         <Footer/>
       </BrowserRouter>

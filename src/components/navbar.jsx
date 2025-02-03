@@ -115,7 +115,7 @@ export default function NavBar() {
                 onClick={() => scrollToSection('delegate-pass')}
                 className="block w-full text-white text-xl md:text-2xl bg-gradient-to-r from-pink-400 to-red-500 px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
               >
-                Accommodation
+                Food And Accommodation
               </button>
             </motion.div>
           </div>

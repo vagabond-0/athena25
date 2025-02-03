@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef,useEffect } from 'react';
 import { useLocation, Link } from "react-router-dom";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Navigation } from 'swiper/modules';
@@ -50,6 +50,9 @@ export default function EventPage() {
   const eventid = location.pathname.split("/");
   let event = eventsDetails.filter((e) => e.id == eventid[2])[0];
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   const handleSwiperInit = (swiper) => {
     swiperRef.current = swiper;
   };

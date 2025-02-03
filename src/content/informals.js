@@ -1,4 +1,4 @@
-const eventsDetails = [
+const Informalsdata = [
     {
         id: "IMPACT-X",
         name : "IMPACT X",   
@@ -9,17 +9,6 @@ const eventsDetails = [
         coordinators : [{name: "Parthiv", phone:" 8075451097"},{name: "Aswin", phone:"7907583776"}],
         link:"https://bit.ly/ImpacTX",
         deadline : "15 February, 2025"
-    },
-    {
-        id: "Nature's-Nest",
-        name : "Nature's Nest",   
-        details: "A  building designing competition based on biomimicry.",
-        date : "13 - 16 February, 2025",
-        posters: ["/events/Nature's-Nest/logo.jpeg","/events/Nature's-Nest/guidelines.jpeg"],
-        price : "200 RS",
-        coordinators : [{name: "Rabia S", phone:" 7902655814"},{name: "Roshmina", phone:"7012682980"}],
-        link:"https://makemypass.com/natures-nest",
-        deadline : "13 February, 2025"
     }
 ]
 export default eventsDetails;
