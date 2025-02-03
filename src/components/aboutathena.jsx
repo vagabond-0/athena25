@@ -69,14 +69,14 @@ const AboutAthena = () => {
             variants={textVariants}
             className='mb-4'
           >
-            ATHENA is a manifesto of opportunities for young people to demonstrate and enrich their talents as well as to bring their ideas into life.
+           ISTE TKMCE proudly presents ATHENA '25, a vibrant platform where innovation sparks, creativity thrives, and dreams take flight. It’s where collaboration fuels groundbreaking ideas and talent meets boundless passion.
           </motion.p>
 
           <motion.p
             variants={textVariants}
             className='mb-4'
           >
-            The fiesta exhibits a new countenance of vigor to transform inventiveness to existence and enhance abounding opportunities to enlive and refurbish the flair of innovation in young minds.
+            ATHENA '25 isn’t just an event; it’s a tribute to the dreamers and innovators who dare to push boundaries and redefine the future.
           </motion.p>
 
           <motion.div
@@ -89,9 +89,7 @@ const AboutAthena = () => {
             >
               Revolutionizing Tomorrow with Technology
             </motion.h2>
-            <motion.p variants={textVariants}>
-              ISTE TKMCE is poised to give every student a truly one of a kind experience and a plethora of memories and valuable insights to carry on with you.
-            </motion.p>
+           
           </motion.div>
         </motion.div>
       </motion.div>

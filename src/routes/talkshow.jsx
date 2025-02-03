@@ -108,7 +108,7 @@ export default function TalkShowPage() {
             </h2>
             <div className="space-y-6">
               <div>
-                <p className="text-lg leading-relaxed">{event.details}</p>
+                <p className="text-lg leading-relaxed whitespace-pre-line">{event.details}</p>
               </div>
 
               <div className="space-y-4 text-lg">

@@ -103,7 +103,7 @@ export default function EventPage() {
               🎭 Event Details
             </h2>
             <div className="space-y-4 text-sm sm:text-base md:text-lg">
-              <p>{event.details}</p>
+              <p className='whitespace-pre-line'>{event.details}</p>
               {event.rulebook && (
                 <a 
                   href={event.rulebook} 

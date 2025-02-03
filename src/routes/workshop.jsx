@@ -108,7 +108,7 @@ export default function WorkshopPage() {
             </h2>
             <div className="space-y-6">
               <div>
-                <p className="text-lg leading-relaxed">{event.details}</p>
+                <p className="text-lg leading-relaxed whitespace-pre-line">{event.details}</p>
                 {event.rulebook && (
                   <a 
                     href={event.rulebook} 

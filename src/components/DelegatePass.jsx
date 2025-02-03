@@ -32,9 +32,9 @@ const DelegatePass = () => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <h2 className="text-4xl text-white  mb-4"  style={{fontFamily:"Retro Signed"}}>Book Your Room</h2>
+        <h2 className="text-4xl text-white  mb-4"  style={{fontFamily:"Retro Signed"}}>Accommodation</h2>
         <p className="text-white/90 text-lg leading-relaxed max-w-lg mx-auto mb-6">
-          Need accommodation during the event? Reserve your room now for a comfortable stay. Special rates available for event delegates.
+          Need accommodation during the event? Reserve your room now for a comfortable stay.
         </p>
         <button 
           className="bg-transparent text-white border-2 border-white px-8 py-3 rounded-full font-semibold text-xl hover:bg-white hover:text-[#B81033] transition-colors duration-200"

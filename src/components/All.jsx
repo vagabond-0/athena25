@@ -22,6 +22,11 @@ const All = () => {
       name: "Talk Session",
       path: "/talkshows",
       description: "Gather 'round for mind-bending sessions with industry titans and thought leaders! Experience captivating discussions that will inspire, enlighten, and transform your perspective on technology."
+    },
+    {
+      name: "Informals",
+      path: "/informals",
+      description: "Gather 'round for mind-bending sessions with industry titans and thought leaders! Experience captivating discussions that will inspire, enlighten, and transform your perspective on technology."
     }
   ];
 
