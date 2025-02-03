@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import eventsDetails from "../content/events.js";
 import workshopDetails from "../content/workshops.js";
 import talkshowDetails from "../content/talkshow.js";
+import Informalsdata from '../content/informals.js';
 
-const EventCard = ({ event, w, e, t }) => {
+
+
+const EventCard = ({ event, w, e, t,i }) => {
   const isEven = event.id % 2 === 0;
   let selectedEvent = event;
   let routePath = '';
@@ -22,6 +25,9 @@ const EventCard = ({ event, w, e, t }) => {
   } else if (t) {
     selectedEvent = talkshowDetails.find(searchEvent) || event;
     routePath = `/talkshow/${event.id}`;
+  } else if (i) {
+    selectedEvent = Informalsdata.find(searchEvent) || event;
+    routePath = `/informals/${event.id}`;
   }
 
   return (

@@ -14,6 +14,7 @@ import TallkShowPage from "./routes/talkshow.jsx"
 import Accommodation from "./routes/accommodation.jsx"
 import Talkshows from "./routes/Talkshows.jsx"
 import Informals from "./routes/Informals.jsx"
+import InformalPage from "./routes/InformalPage.jsx"
 
 export default function App() {
   return(
@@ -27,6 +28,7 @@ export default function App() {
           <Route path="/event/:eventid" element={<EventPage/>}/>
           <Route path="/workshop/:eventid" element={<WorkshopPage/>}/>
           <Route path="/talkshow/:eventid" element={<TallkShowPage/>}/>
+          <Route path="/informals/:eventid" element={<InformalPage />}/>
           <Route path="/events" element={<Events/>}/>
           <Route path="/workshops" element={<Workshops/>}/>
           <Route path="/talkshows" element={<Talkshows />} />
