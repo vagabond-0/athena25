@@ -34,7 +34,7 @@ const CustomCarousel = ({ event, showGuidelines, guidelines, onSwiperInit }) => 
             <img
               src={src}
               alt={`Slide ${index + 1}`}
-              className="object-cover w-full h-full rounded-lg transform hover:scale-105 transition-transform duration-300"
+              className="object-fill w-full h-full rounded-lg transform hover:scale-105 transition-transform duration-300"
             />
           </motion.div>
         </SwiperSlide>
