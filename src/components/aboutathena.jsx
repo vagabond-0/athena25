@@ -35,7 +35,7 @@ const AboutAthena = () => {
   };
 
   return (
-    <div className='min-h-screen w-full bg-gradient-to-b from-[#080616] to-[#B81033] text-white flex flex-col justify-center items-center p-4 md:p-8 font-poppins'>
+    <div className='min-h-screen w-full bg-gradient-to-b from-[#080616] via-[#B81033] to-[#080616] text-white flex flex-col justify-center items-center p-4 md:p-8 font-poppins'>
       <motion.div
         className='max-w-4xl mx-auto text-center'
         variants={containerVariants}

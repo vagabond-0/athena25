@@ -31,5 +31,22 @@ const eventsDetails = [
     link: "https://makemypass.com/natures-nest",
     deadline: "12 February, 2025",
   },
+  {
+    id: "Mechmerize",
+    name: "Mechmerize",
+    details: "A  building designing competition based on biomimicry.",
+    date: "15 February, 2025",
+    posters: [
+      "/events/Nature's-Nest/logo.jpeg",
+      "/events/Nature's-Nest/guidelines.jpeg",
+    ],
+    price: "250 RS",
+    coordinators: [
+      { name: "Navya km", phone: " 75609 50436" },
+      { name: "Dany James", phone: "9526976445" },
+    ],
+    link: "https://makemypass.com/mechmerize",
+    deadline: "15 February 2025",
+  },
 ];
 export default eventsDetails;

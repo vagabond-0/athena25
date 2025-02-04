@@ -91,10 +91,22 @@ const Footer = () => {
         <div className="p-2 flex justify-center md:justify-end">
           <div className="p-2 pl-5 rounded-lg transform rotate-3 hover:rotate-0 transition-transform duration-300">
             <img
-              className="w-36 md:w-48 h-auto"
-              src={istelogo}
-              alt="ISTE Logo"
-            />
+                      src={istelogo}
+                      alt="ISTE Logo"
+                      className="w-36 md:w-48 h-auto"
+                      style={{
+                        animation: "spin-slow 50s linear infinite",
+                        zIndex: 1,
+                        height: 'auto',
+                        
+                      }}
+                    />
+                    <style jsx>{`
+                      @keyframes spin-slow {
+                        from { transform: rotate(0deg); }
+                        to { transform: rotate(360deg); }
+                      }
+                    `}</style>
           </div>
         </div>
       </div>
