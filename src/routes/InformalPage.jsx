@@ -136,11 +136,14 @@ export default function InformalPage() {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          <Link to={event.link}>
+           {event.isopen?<Link to={event.link}>
             <button className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 text-black font-bold text-base sm:text-lg md:text-xl px-6 py-3 md:px-12 md:py-4 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
               🎟️ Register Now!
             </button>
-          </Link>
+          </Link>:<button className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-500 text-black font-bold text-base sm:text-lg md:text-xl px-6 py-3 md:px-12 md:py-4 rounded-full shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all">
+              Closed
+            </button>}
+          
         </motion.div>
       </div>
     </motion.div>

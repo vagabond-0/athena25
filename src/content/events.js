@@ -13,6 +13,7 @@ const eventsDetails = [
     ],
     link: "https://bit.ly/ImpacTX",
     deadline: "15 February, 2025",
+    isopen:true
   },
   {
     id: "Nature's-Nest",
@@ -31,6 +32,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/natures-nest",
     deadline: "12 February, 2025",
+    isopen:true
   },
   {
     id: "Mechmerize",
@@ -48,6 +50,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/mechmerize",
     deadline: ".... February 2025",
+    isopen:false
   },
   {
     id: "ByteBug",
@@ -62,6 +65,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/bytebug/",
     deadline: "12 February, 2025",
+    isopen:false
   },
 ];
 export default eventsDetails;
