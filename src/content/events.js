@@ -17,10 +17,12 @@ const eventsDetails = [
   {
     id: "Nature's-Nest",
     name: "Nature's Nest",
-    details: "Design is the journey of discovery, where creativity meets purpose.\n\nCan Nature Inspire the Future of Architecture? Step into an exciting challenge where creativity meets sustainability! We present to you Nature’s Nest as a part of Athena ‘25—the Annual Technical Fest of ISTE TKMCE.✨\n\nDesign a structure that integrates smart and efficient design principles, capturing the essence of strategies found in the world around us. Explore innovative ways to enhance functionality and aesthetics while solving real-world challenges.🏕️\n\nThink like nature, design with purpose, and let your creation stand strong—no hibernation needed!🍃\n\n📌 Date   : 16 February, 2025\n📌 Team : 2-4 members\n📌 Mode : Hybrid\n📌 Reg fee : ₹200",
+    details:
+      "Design is the journey of discovery, where creativity meets purpose.\n\nCan Nature Inspire the Future of Architecture? Step into an exciting challenge where creativity meets sustainability! We present to you Nature’s Nest as a part of Athena ‘25—the Annual Technical Fest of ISTE TKMCE.✨\n\nDesign a structure that integrates smart and efficient design principles, capturing the essence of strategies found in the world around us. Explore innovative ways to enhance functionality and aesthetics while solving real-world challenges.🏕️\n\nThink like nature, design with purpose, and let your creation stand strong—no hibernation needed!🍃\n\n📌 Date   : 16 February, 2025\n📌 Team : 2-4 members\n📌 Mode : Hybrid\n📌 Reg fee : ₹200",
     date: "13 - 16 February, 2025",
     posters: [
-      "/events/Nature's-Nest/logo.jpeg", "/events/Nature's-Nest/guidelines.jpeg"
+      "/events/Nature's-Nest/logo.jpeg",
+      "/events/Nature's-Nest/guidelines.jpeg",
     ],
     price: "200 RS",
     coordinators: [
@@ -28,6 +30,37 @@ const eventsDetails = [
       { name: "Roshmina", phone: "7012682980" },
     ],
     link: "https://makemypass.com/natures-nest",
+    deadline: "12 February, 2025",
+  },
+  {
+    id: "Mechmerize",
+    name: "Mechmerize",
+    details: ".........",
+    date: "15 February, 2025",
+    posters: [
+      "/events/Mechmerize/logo.jpeg",
+      "/events/Mechmerize/guidelines.jpeg",
+    ],
+    price: "250 RS",
+    coordinators: [
+      { name: "Navya K M", phone: "7560950436" },
+      { name: "Dany James", phone: "9526976445" },
+    ],
+    link: "https://makemypass.com/mechmerize",
+    deadline: ".... February 2025",
+  },
+  {
+    id: "ByteBug",
+    name: "ByteBug",
+    details: "A debugging competition with puzzles",
+    date: "15 February, 2025",
+    posters: ["/events/ByteBug/logo.jpeg", "/events/ByteBug/guidelines.jpeg"],
+    price: "150 RS",
+    coordinators: [
+      { name: "Athila", phone: " 7034551438" },
+      { name: "Abhishek", phone: "9496388163" },
+    ],
+    link: "https://makemypass.com/bytebug/",
     deadline: "12 February, 2025",
   },
 ];
