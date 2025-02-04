@@ -43,7 +43,7 @@ const eventsDetails = [
       { name: "Abhishek", phone: "9496388163" },
     ],
     link: "https://makemypass.com/bytebug/",
-    deadline: "14 February, 2025",
+    deadline: "12 February, 2025",
   },
 ];
 export default eventsDetails;
