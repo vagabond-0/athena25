@@ -31,5 +31,19 @@ const eventsDetails = [
     link: "https://makemypass.com/natures-nest",
     deadline: "12 February, 2025",
   },
+  {
+    id: "ByteBug",
+    name: "ByteBug",
+    details: "A debugging competition with puzzles",
+    date: "15 February, 2025",
+    posters: ["/events/ByteBug/logo.jpeg", "/events/ByteBug/guidelines.jpeg"],
+    price: "150 RS",
+    coordinators: [
+      { name: "Athila", phone: " 7034551438" },
+      { name: "Abhishek", phone: "9496388163" },
+    ],
+    link: "https://makemypass.com/bytebug/",
+    deadline: "14 February, 2025",
+  },
 ];
 export default eventsDetails;
