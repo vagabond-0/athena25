@@ -57,7 +57,8 @@ const eventsDetails = [
     name: "ByteBug",
     details: "A debugging competition with puzzles",
     date: "15 February, 2025",
-    posters: ["/events/ByteBug/logo.jpeg", "/events/ByteBug/guidelines.jpeg"],
+    posters: ["/events/ByteBug/logo.jpeg",
+              "/events/ByteBug/guidelines.jpeg"],
     price: "150 RS",
     coordinators: [
       { name: "Athila", phone: " 7034551438" },
@@ -65,14 +66,15 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/bytebug/",
     deadline: "12 February, 2025",
-    isopen:false
+    isopen:true
   },
   {
     id: "Generative AI",
     name: "Generative AI",
     details: "--",
     date: "16 Feb 2025",
-    posters: ["/events/Generative AI/logo.jpeg", "/events/Generative AI/guidelines.jpeg"],
+    posters: ["/events/Generative AI/logo.jpeg",
+              "/events/Generative AI/guidelines.jpeg"],
     price: "iste members - 300/-  Non iste members -400/-",
     coordinators: [
       { name: "DEVIKA A K", phone: " 7594827955" },
@@ -87,7 +89,8 @@ const eventsDetails = [
     name: "League of Ludo",
     details: "--",
     date: "16 Feb 2025",
-    posters: ["/events/League of Ludo/logo.jpeg", "/events/League of Ludo/guidelines.jpeg"],
+    posters: ["/events/League of Ludo/logo.jpeg",
+              "/events/League of Ludo/guidelines.jpeg"],
     price: "80 / team",
     coordinators: [
       { name: "Sneha ", phone: "7356492394" },
@@ -102,7 +105,8 @@ const eventsDetails = [
     name: "Re-Action Rush",
     details: "Action rush is a rapid burst of energy and momentum driving swift and decisive actions.",
     date: "15 feb 2025",
-    posters: ["/events/Re-Action Rush/logo.jpeg", "/events/Re-Action Rush/guidelines.jpeg"],
+    posters: ["/events/Re-Action Rush/logo.jpeg",
+              "/events/Re-Action Rush/guidelines.jpeg"],
     price: "60 / team",
     coordinators: [
       { name: "Sherin", phone: "7306564995" },
