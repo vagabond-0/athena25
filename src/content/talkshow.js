@@ -1,6 +1,6 @@
 const talkshowDetails = [
     {
-            id: "Talksection-A25",
+            id: "Talksection",
             name : "Entrepreneurial-mindset : what it takes to succeed",
             details: "",
             date : "15 Feb 2025",
