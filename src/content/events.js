@@ -79,7 +79,22 @@ const eventsDetails = [
       { name: "DEVIKA D", phone: "85472 60003" },
     ],
     link: "https://makemypass.com/workshop-on-generative-ai",
-    deadline: "13 night",
+    deadline: "13 Feb 2025",
+    isopen:true
+  },
+  {
+    id: "League of Ludo",
+    name: "League of Ludo",
+    details: "--",
+    date: "16 Feb 2025",
+    posters: ["/events/League of Ludo/logo.jpeg", "/events/League of Ludo/guidelines.jpeg"],
+    price: "80 / team",
+    coordinators: [
+      { name: "Sneha ", phone: "7356492394" },
+      { name: "Suryaja", phone: "79079 37651" },
+    ],
+    link: "https://makemypass.com/league-of-ludo ",
+    deadline: "13 Feb 2025",
     isopen:true
   },
 ];
