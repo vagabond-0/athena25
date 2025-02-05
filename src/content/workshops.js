@@ -13,11 +13,11 @@ const workshopDetails= [
 },
 {
     id: "Generative-ai",
-    name: "Generative-AI",
-    details: "--",
+    name: "Generative ai",
+    details: "“When machines dream, they dream in code.”\n\nCurious about AI❓ \nAthena ‘25—the Annual Technical Fest of ISTE TKMCE presents Generative AI, a hands-on workshop on optimizing and deploying AI models. Explore the fundamentals of Generative AI and real-world applications in a simple, practical way. 💻 \n\nAI sounds complex? Don’t worry—we’re here to make it as easy as scrolling memes! This workshop welcomes all curious minds, guiding you through a journey to unlock the power of AI. 🚀 \n\nDive in, innovate, and be part of the AI revolution!\n\n Date : 16 February, 2025\n\n Time : 10:00 AM\n \nMode : Offline",
     date: "16 Feb 2025",
-    posters: ["/events/Generative-AI/logo.jpeg",
-              "/events/Generative-AI/guidelines.jpeg"],
+    posters: ["/events/Generative-AI/poster.png",
+              "/events/Generative-AI/Syllabus.png"],
     price: "iste members - 300/-  Non iste members -400/-",
     coordinators: [
       { name: "DEVIKA A K", phone: " 7594827955" },
