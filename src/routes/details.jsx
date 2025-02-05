@@ -56,13 +56,13 @@ Faulty Registration
 If there is an error in registration due to technical issues or system errors, participants may request a refund of their registration fees. The refund will be processed within 7 business days of the request.
 
 Event Cancellation
-In the circumstances that ATHENA' 24 cancels an event, participants will be entitled to a full refund of their registration fees.
+In the circumstances that ATHENA'25 cancels an event, participants will be entitled to a full refund of their registration fees.
 
 No-show or Withdrawal
 Once registered for an event, participants are expected to attend and participate as scheduled. If a participant is unable to attend or participate, the registration fees are non-refundable.
 
 Refund Process
-All refund requests must be made by email to the address provided on the ATHENA' 24 website. Refund requests must include the participant's name, registration details, and reason for the request. Refunds will be processed using the original payment method, and may take up to 7 business days to appear in the participant's account.
+All refund requests must be made by email to the address provided on the ATHENA'25 website. Refund requests must include the participant's name, registration details, and reason for the request. Refunds will be processed using the original payment method, and may take up to 7 business days to appear in the participant's account.
 
 Amendments
 ATHENA'25 reserves the right to amend this refund policy at any time without notice. Participants are responsible for reviewing the policy periodically to ensure compliance.
