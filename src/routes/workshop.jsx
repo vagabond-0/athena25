@@ -68,7 +68,7 @@ const CustomCard = ({ src }) => {
       >
         <img 
           src={src} 
-          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-fill transform hover:scale-105 transition-transform duration-300"
           alt="Workshop"
         />
       </motion.div>
