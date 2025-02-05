@@ -50,7 +50,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/mechmerize",
     deadline: ".... February 2025",
-    isopen:false
+    isopen:true
   },
   {
     id: "ByteBug",
