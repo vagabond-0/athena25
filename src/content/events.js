@@ -87,22 +87,7 @@ const eventsDetails = [
     deadline: "12 February, 2025",
     isopen:true
   },
-  {
-    id: "Generative-ai",
-    name: "Generative-AI",
-    details: "--",
-    date: "16 Feb 2025",
-    posters: ["/events/Generative-AI/logo.jpeg",
-              "/events/Generative-AI/guidelines.jpeg"],
-    price: "iste members - 300/-  Non iste members -400/-",
-    coordinators: [
-      { name: "DEVIKA A K", phone: " 7594827955" },
-      { name: "DEVIKA D", phone: "85472 60003" },
-    ],
-    link: "https://makemypass.com/workshop-on-generative-ai",
-    deadline: "13 Feb 2025",
-    isopen:true
-  },
+  
   {
     id: "League-of-Ludo",
     name: "League-of-Ludo",
