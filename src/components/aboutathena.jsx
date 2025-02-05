@@ -58,12 +58,7 @@ const AboutAthena = () => {
           variants={containerVariants}
           className='space-y-6 text-lg md:text-xl leading-relaxed'
         >
-          <motion.p
-            variants={textVariants}
-            className='mb-4'
-          >
-            ISTE TKMCE is glad to present ATHENA, 22nd Annual ISTE State Students' Convention.
-          </motion.p>
+          
 
           <motion.p
             variants={textVariants}
