@@ -30,7 +30,7 @@ const eventsDetails = [
       { name: "NADHRAN", phone: "7736003200" },
       { name: "ASWIN JP", phone: "9207150930" },
     ],
-    link: "https://makemypass.com/natures-nest",
+    link: "",
     deadline: "14 February, 2025",
     isopen:true
   },

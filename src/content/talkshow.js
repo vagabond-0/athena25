@@ -7,7 +7,9 @@ const talkshowDetails = [
             posters: "",
             deadline: "15/02/25",
             price : "FREE",
-            coordinators : [{name: "Hadya unais", phone:"9072211772"},{name: "Muhammed salih u k", phone:"8086219319"}],
+            coordinators : [
+                {name: "Hadya unais", phone:"9072211772"},
+                {name: "Muhammed salih u k", phone:"8086219319"}],
             link: "https://makemypass.com/entrepreneurial-mindset",
             isopen:true
 },
