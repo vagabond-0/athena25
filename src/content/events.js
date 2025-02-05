@@ -113,7 +113,7 @@ const eventsDetails = [
       { name: "Renah", phone: "96053 01454" },
     ],
     link: "https://makemypass.com/re-action-rush",
-    deadline: "13 Feb 2025",
+    deadline: "14 Feb 2025",
     isopen:true
   },
   
