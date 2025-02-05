@@ -1,6 +1,7 @@
 import {React,useEffect} from 'react'
 import talkshowDetails from '../content/talkshow'
 import EventCard from '../components/EventCard'
+import Informalsdata from '../content/informals'
 
 const Informals = () => {
   useEffect(()=>{
@@ -14,7 +15,9 @@ const Informals = () => {
       </div>
       <div className="flex flex-col  justify-center gap-10 rounded-lg items-center pl-4 pr-4 ">
         {
-          talkshowDetails.map((e) => {
+          Informalsdata
+          .filter((e) => e.isopen) 
+          .map((e) => {
             return (
               <EventCard event={e} t />
             )
