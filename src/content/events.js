@@ -69,7 +69,7 @@ const eventsDetails = [
     isopen:true
   },
   {
-    id: "Generative-AI",
+    id: "GenerativeAI",
     name: "Generative-AI",
     details: "--",
     date: "16 Feb 2025",
