@@ -74,7 +74,7 @@ export default function NavBar() {
             >
               <button
                 onClick={() => scrollToSection('hero')}
-                className="block w-full text-white text-xl md:text-2xl bg-gradient-to-r from-purple-400 to-blue-500 px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
+                className="block w-full text-white text-xl md:text-2xl bg-gradient-to-r from-[#c31432] to-[#240b36] px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
               >
                 Home
               </button>
@@ -87,7 +87,7 @@ export default function NavBar() {
             >
               <button
                 onClick={() => scrollToSection('about')}
-                className="block w-full text-white text-xl md:text-2xl bg-gradient-to-r from-green-400 to-teal-500 px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
+                className="block w-full text-white text-xl md:text-2xl bg-gradient-to-r from-[#240b36] to-[#c31432] px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
               >
                 About
               </button>
@@ -100,7 +100,7 @@ export default function NavBar() {
             >
               <button
                 onClick={() => scrollToSection('events')}
-                className="block w-full text-white text-xl md:text-2xl bg-gradient-to-r from-yellow-400 to-orange-500 px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
+                className="block w-full text-white text-xl md:text-2xl bg-gradient-to-r from-[#c31432] to-[#240b36] px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
               >
                 Events
               </button>
@@ -113,7 +113,7 @@ export default function NavBar() {
             >
               <button
                 onClick={() => scrollToSection('delegate-pass')}
-                className="block w-full text-white text-xl md:text-2xl bg-gradient-to-r from-pink-400 to-red-500 px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
+                className="block w-full text-white text-xl md:text-2xl bg-gradient-to-r from-[#240b36] to-[#c31432] px-6 py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:-translate-y-1 transition-all"
               >
                 Food And Accommodation
               </button>
