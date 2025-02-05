@@ -68,7 +68,7 @@ const CustomCard = ({ src }) => {
       >
         <img 
           src={src} 
-          className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-300"
+          className="w-full h-full object-fill transform hover:scale-105 transition-transform duration-300"
           alt="Workshop"
         />
       </motion.div>
@@ -102,7 +102,7 @@ export default function WorkshopPage() {
         </motion.h1>
 
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          <div className="space-y-6">
+          <div className="space-y-6 ">
             <CustomCarousel event={event.posters} />
           </div>
 

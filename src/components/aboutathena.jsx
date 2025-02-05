@@ -17,12 +17,12 @@ const AboutAthena = () => {
           </p>
 
           <p className='mb-4'>
-            ATHENA '25 isn’t just an event; it’s a tribute to the dreamers and innovators who dare to push boundaries and redefine the future.
+           
           </p>
 
           <div className='mt-8 p-6  rounded-lg backdrop-blur-sm'>
             <h2 className='text-2xl md:text-3xl font-semibold mb-4 text-yellow-300'>
-              Revolutionizing Tomorrow with Technology
+            ATHENA '25 isn’t just an event; it’s a tribute to the dreamers and innovators who dare to push boundaries and redefine the future.
             </h2>
           </div>
         </div>
