@@ -16,6 +16,25 @@ const eventsDetails = [
     isopen:true
   },
   {
+    id: "SPARKATHON",
+    name: "SPARKATHON",
+    details:
+      "",
+    date: "16 FEBRUARY,2025",
+    posters: [
+      "/events/SPARKATHON/logo.jpeg",
+      "/events/SPARKATHON/guidelines.jpeg",
+    ],
+    price: "40 RS",
+    coordinators: [
+      { name: "NADHRAN", phone: "7736003200" },
+      { name: "ASWIN JP", phone: "9207150930" },
+    ],
+    link: "https://makemypass.com/natures-nest",
+    deadline: "14 February, 2025",
+    isopen:true
+  },
+  {
     id: "Nature's-Nest",
     name: "Nature's Nest",
     details:
