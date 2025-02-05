@@ -1,7 +1,7 @@
 const workshopDetails= [
     {
         id: "3D-PRINTING-ATHENA25",
-        name : "3D-Printing-Workshop-With-SolidWorks",
+        name : "3D Printing Workshop With SolidWorks",
         details: "",
         date : "15 Feb 2025",
         posters: [" "," "],
