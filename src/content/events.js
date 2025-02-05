@@ -43,7 +43,7 @@ const eventsDetails = [
       "/events/Mechmerize/logo.jpeg",
       "/events/Mechmerize/guidelines.jpeg",
     ],
-    price: "250 RS",
+    price: "200 RS",
     coordinators: [
       { name: "Navya K M", phone: "7560950436" },
       { name: "Dany James", phone: "9526976445" },
@@ -116,5 +116,6 @@ const eventsDetails = [
     deadline: "13 Feb 2025",
     isopen:true
   },
+  
 ];
 export default eventsDetails;
