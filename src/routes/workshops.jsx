@@ -15,13 +15,12 @@ export default function Workshops() {
       </div>
       <div className="flex flex-col  justify-center gap-10 rounded-lg items-center pl-4 pr-4 ">
         {
-        workshopDetails.map((e) => {
-            return (
-              <EventCard event={e} w />
-            )
-
-          })
-        }
+          workshopDetails
+            .filter((e) => e.isopen) 
+            .map((e) => (
+              <EventCard key={e.id} event={e} w />
+            ))}
+       
 
       </div>
     </div>
