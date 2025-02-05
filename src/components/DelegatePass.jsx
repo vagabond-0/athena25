@@ -42,7 +42,7 @@ const DelegatePass = () => {
         </p>
         <button 
           className="bg-transparent text-white border-2 border-white px-8 py-3 rounded-full font-semibold text-xl hover:bg-white hover:text-[#B81033] transition-colors duration-200"
-          onClick={() => setShowMessage(true)}
+          onClick={() => setShowMessage(!showMessage)}
         >
           Book Room
         </button>
