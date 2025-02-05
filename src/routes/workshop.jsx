@@ -81,6 +81,10 @@ export default function WorkshopPage() {
   const eventid = location.pathname.split("/");
   let event = workshopDetails.filter((e) => e.id == eventid[2])[0];
 
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import eventsDetails from "../content/events.js";
 import workshopDetails from "../content/workshops.js";
@@ -10,6 +10,7 @@ const EventCard = ({ event, w, e, t, i }) => {
   let selectedEvent = event;
   let routePath = '';
 
+  
   function searchEvent(e) {
     return e.id == event.id;
   }
@@ -29,7 +30,7 @@ const EventCard = ({ event, w, e, t, i }) => {
   }
 
   return (
-    <div className="w-full md:h-96 flex flex-col md:flex-row justify-center text-white shadow-lg rounded-lg overflow-hidden">
+    <div className="w-full md:w-10/12 md:h-96 flex flex-col md:flex-row justify-center text-white shadow-lg rounded-lg overflow-hidden">
       <div className={`w-full md:w-2/6 h-64 md:h-full flex justify-center items-center order-1 ${isEven ? 'md:order-1' : 'md:order-2'}`}>
         <img src={selectedEvent.posters[0]} alt={selectedEvent.name} className="w-full h-full object-fill" />
       </div>

@@ -53,6 +53,7 @@ export default function EventPage() {
   useEffect(()=>{
     window.scrollTo(0,0);
   },[])
+  
   const handleSwiperInit = (swiper) => {
     swiperRef.current = swiper;
   };
