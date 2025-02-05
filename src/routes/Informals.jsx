@@ -10,7 +10,7 @@ const Informals = () => {
   
   return (
     <div className="w-screen min-h-screen  p-10 ">
-      <div className="text-6xl">
+      <div className="sm:text-6xl text-5xl p-4">
         <h1 style={{fontFamily:" Retro Signed"}}>Informals</h1>
       </div>
       <div className="flex flex-col  justify-center gap-10 rounded-lg items-center pl-4 pr-4 ">
