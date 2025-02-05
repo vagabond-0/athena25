@@ -1,5 +1,4 @@
 import React from 'react';
-import { motion } from 'framer-motion';
 import { useNavigate } from 'react-router-dom';
 
 import bgcarnival from "../assets/bgcarnival.jpg";
@@ -35,7 +34,7 @@ const All = () => {
   };
 
   return (
-    <div className='md:min-h-screen  h-screen flex flex-col md:flex-row gap-10 justify-center items-center p-20 font-poppins'
+    <div className='md:min-h-screen h-screen flex flex-col md:flex-row gap-10 justify-center items-center p-20 font-poppins'
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${bgcarnival})`,
         backgroundSize: "cover",
@@ -44,19 +43,12 @@ const All = () => {
       }}
     >
       {AllContent.map((all, index) => (
-        <motion.div
+        <div
           key={index}
           className='relative w-64 h-80 perspective-1000 cursor-pointer'
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 2 }}
-          viewport={{
-            once: false,
-            amount: 0.3
-          }}
           onClick={() => handleCardClick(all.path)}
         >
-          <motion.div
+          <div
             className='w-full h-full flex flex-col justify-center items-center
                      border-4 border-yellow-300 rounded-lg
                      bg-gradient-to-b from-[#1a0208] to-[#B81033]
@@ -72,16 +64,12 @@ const All = () => {
               {all.name}
             </h1>
 
-            {/* <p className='text-yellow-300 text-lg text-center px-6'>
-              {all.description}
-            </p> */}
-
             <div className='absolute top-2 left-2 w-4 h-4 border-t-2 border-l-2 border-yellow-300'></div>
             <div className='absolute top-2 right-2 w-4 h-4 border-t-2 border-r-2 border-yellow-300'></div>
             <div className='absolute bottom-2 left-2 w-4 h-4 border-b-2 border-l-2 border-yellow-300'></div>
             <div className='absolute bottom-2 right-2 w-4 h-4 border-b-2 border-r-2 border-yellow-300'></div>
-          </motion.div>
-        </motion.div>
+          </div>
+        </div>
       ))}
     </div>
   );
