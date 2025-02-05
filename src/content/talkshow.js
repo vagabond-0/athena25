@@ -1,7 +1,7 @@
 const talkshowDetails = [
     {
             id: "entrepreneurial-mindset",
-            name : " Entrepreneurial mindset : what it takes to succeed",
+            name : "Entrepreneurial-mindset : what it takes to succeed",
             details: "",
             date : "15 Feb 2025",
             posters: "",
