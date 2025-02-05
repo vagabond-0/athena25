@@ -95,14 +95,14 @@ export default function WorkshopPage() {
         <motion.h1
           initial={{ y: -50 }}
           animate={{ y: 0 }}
-          className="text-center p-10 text-4xl md:text-5xl lg:text-5xl mb-8 md:mb-12  text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-red-300 to-pink-300"
+          className="text-center text-2xl sm:text-4xl md:text-5xl lg:text-6xl mb-6 md:mb-12 text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 via-red-300 to-pink-300"
           style={{ fontFamily: "Retro Signed" }}
         >
           {event.name}
         </motion.h1>
 
-        <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
-          <div className="space-y-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+          <div className="space-y-4 ">
             <CustomCarousel event={event.posters} />
           </div>
 
