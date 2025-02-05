@@ -16,7 +16,7 @@ export default function Events() {
         {eventsDetails
           .filter((e) => e.isopen) 
           .map((e) => (
-            <EventCard key={e.id} event={e} />
+            <EventCard key={e.id} event={e} e />
           ))}
       </div>
     </div>
