@@ -9,7 +9,7 @@ const workshopDetails= [
         price : "₹500 for Non-ISTE members,₹400 for ISTE members",
         coordinators : [{name: "Fardeen", phone:"7736055843"},{name: "Nafih", phone:"8113920470"}],
         link: "https://makemypass.com/3d-printing-workshop-2",
-        isopen:true
+        isopen:false
 },
 {
     id: "Generative-ai",
