@@ -69,12 +69,12 @@ const eventsDetails = [
     isopen:true
   },
   {
-    id: "Generative AI",
-    name: "Generative AI",
+    id: "Generative-AI",
+    name: "Generative-AI",
     details: "--",
     date: "16 Feb 2025",
-    posters: ["/events/Generative AI/logo.jpeg",
-              "/events/Generative AI/guidelines.jpeg"],
+    posters: ["/events/Generative-AI/logo.jpeg",
+              "/events/Generative-AI/guidelines.jpeg"],
     price: "iste members - 300/-  Non iste members -400/-",
     coordinators: [
       { name: "DEVIKA A K", phone: " 7594827955" },
@@ -85,12 +85,12 @@ const eventsDetails = [
     isopen:true
   },
   {
-    id: "League of Ludo",
-    name: "League of Ludo",
+    id: "League-of-Ludo",
+    name: "League-of-Ludo",
     details: "--",
     date: "16 Feb 2025",
-    posters: ["/events/League of Ludo/logo.jpeg",
-              "/events/League of Ludo/guidelines.jpeg"],
+    posters: ["/events/League-of-Ludo/logo.jpeg",
+              "/events/League-of-Ludo/guidelines.jpeg"],
     price: "80 / team",
     coordinators: [
       { name: "Sneha ", phone: "7356492394" },
@@ -101,12 +101,12 @@ const eventsDetails = [
     isopen:true
   },
   {
-    id: "Re-Action Rush",
-    name: "Re-Action Rush",
+    id: "Re-Action-Rush",
+    name: "Re-Action-Rush",
     details: "Action rush is a rapid burst of energy and momentum driving swift and decisive actions.",
     date: "15 feb 2025",
-    posters: ["/events/Re-Action Rush/logo.jpeg",
-              "/events/Re-Action Rush/guidelines.jpeg"],
+    posters: ["/events/Re-Action-Rush/logo.jpeg",
+              "/events/Re-Action-Rush/guidelines.jpeg"],
     price: "60 / team",
     coordinators: [
       { name: "Sherin", phone: "7306564995" },
