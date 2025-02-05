@@ -4,7 +4,7 @@ const talkshowDetails = [
             name : "Entrepreneurial-mindset : what it takes to succeed",
             details: "",
             date : "15 Feb 2025",
-            posters: "",
+            posters: [" "," "],
             deadline: "15/02/25",
             price : "FREE",
             coordinators : [
