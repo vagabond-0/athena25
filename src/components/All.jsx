@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import bgcarnival2 from "../assets/bgcarnival2.png";
+import bgcarnival2 from "../assets/bgcarnival3.jpg";
 
 const All = () => {
   const navigate = useNavigate();
