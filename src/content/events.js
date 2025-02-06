@@ -59,8 +59,8 @@ const eventsDetails = [
     details: ".........",
     date: "15 February, 2025",
     posters: [
-      "/events/Mechmerize/logo.jpeg",
-      "/events/Mechmerize/guidelines.jpeg",
+      "/events/Mechmerize/logo.jpg",
+      "/events/Mechmerize/guidelines.jpg",
     ],
     price: "200 RS",
     coordinators: [
