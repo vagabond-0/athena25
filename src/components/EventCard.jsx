@@ -31,7 +31,7 @@ const EventCard = ({ event, w, e, t, i }) => {
 
   return (
     <div className="w-full md:w-10/12 md:h-96 flex flex-col md:flex-row justify-center text-white shadow-lg rounded-lg overflow-hidden">
-      <div className={`w-full md:w-2/6 h-64 md:h-full flex justify-center items-center order-1 ${isEven ? 'md:order-1' : 'md:order-2'}`}>
+      <div className={`w-full md:w-2/6 h-auto md:h-full flex justify-center items-center order-1 ${isEven ? 'md:order-1' : 'md:order-2'}`}>
         <img src={selectedEvent.posters[0]} alt={selectedEvent.name} className="w-full h-full object-fill" />
       </div>
       <div className={`flex flex-col w-full md:w-1/2 p-6 h-full justify-between order-2 bg-gradient-to-r from-[#c31432] to-[#240b36] ${isEven ? 'md:order-2' : 'md:order-1'}`}>

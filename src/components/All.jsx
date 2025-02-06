@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import bgcarnival from "../assets/bgcarnival.jpg";
+import bgcarnival2 from "../assets/bgcarnival2.png";
 
 const All = () => {
   const navigate = useNavigate();
@@ -36,7 +36,7 @@ const All = () => {
   return (
     <div className='md:min-h-screen h-fit flex flex-col md:flex-row gap-10 justify-center items-center p-20 font-poppins'
       style={{
-        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${bgcarnival})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(${bgcarnival2})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat"
