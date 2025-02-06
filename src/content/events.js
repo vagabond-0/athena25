@@ -56,7 +56,7 @@ const eventsDetails = [
   {
     id: "Mechmerize",
     name: "Mechmerize",
-    details: ".........",
+    details: "Mechmerize is a competition where you unleash your creativity as you reimagine overlooked materials into extraordinary designs. Collaborate in teams and put your engineering skills to the test in this hands-on, offline event. Showcase your ingenuity and compete against the best and turn imagination into reality!",
     date: "15 February, 2025",
     posters: [
       "/events/Mechmerize/logo.jpg",
