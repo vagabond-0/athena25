@@ -68,8 +68,8 @@ const eventsDetails = [
       { name: "Dany James", phone: "9526976445" },
     ],
     link: "https://makemypass.com/mechmerize",
-    deadline: ".... February 2025",
-    isopen:false
+    deadline: "12 February 2025",
+    isopen:true
   },
   {
     id: "ByteBug",
