@@ -38,7 +38,7 @@ const eventsDetails = [
     id: "Nature's-Nest",
     name: "Nature's Nest",
     details:
-      "Design is the journey of discovery, where creativity meets purpose.\n\nCan Nature Inspire the Future of Architecture? Step into an exciting challenge where creativity meets sustainability! We present to you Nature’s Nest as a part of Athena ‘25—the Annual Technical Fest of ISTE TKMCE.✨\n\nDesign a structure that integrates smart and efficient design principles, capturing the essence of strategies found in the world around us. Explore innovative ways to enhance functionality and aesthetics while solving real-world challenges.🏕️\n\nThink like nature, design with purpose, and let your creation stand strong—no hibernation needed!🍃\n\n📌 Date   : 16 February, 2025\n📌 Team : 2-4 members\n📌 Mode : Hybrid\n📌 Reg fee : ₹200",
+      "Nature’s Nest is an exciting design challenge that celebrates diversity in architecture and construction technology, urging participants to break free from traditional boundaries and unleash their creativity. The event invites you to reimagine modern design by exploring innovative solutions and shaping the future of architecture with fresh, forward-thinking approaches.",
     date: "13 - 16 February, 2025",
     posters: [
       "/events/Nature's-Nest/logo.jpeg",
