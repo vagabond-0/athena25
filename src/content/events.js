@@ -102,7 +102,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/league-of-ludo ",
     deadline: "13 Feb 2025",
-    isopen:false
+    isopen:true
   },
   {
     id: "Re-Action-Rush",
