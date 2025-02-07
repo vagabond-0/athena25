@@ -134,7 +134,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/red-handed",
     deadline: "13 Feb 2025",
-    isopen:false
+    isopen:true
   },
   
   
