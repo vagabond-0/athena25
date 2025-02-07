@@ -125,15 +125,15 @@ const eventsDetails = [
     name: "Red-Handed",
     details: "....",
     date: "15 feb 2025",
-    posters: ["/events/Re-Action-Rush/logo.jpeg",
-              "/events/Re-Action-Rush/guidelines.jpeg"],
-    price: "60 / team",
+    posters: ["/events/Red-Handed/logo.jpeg",
+              "/events/Red-Handed/guidelines.jpeg"],
+    price: "50 per head",
     coordinators: [
-      { name: "Sherin", phone: "7306564995" },
-      { name: "Renah", phone: "96053 01454" },
+      { name: "Ramjith M M", phone: "9188145715" },
+      { name: "Devanandha T P", phone: "8139044030" },
     ],
     link: "https://makemypass.com/red-handed",
-    deadline: "14 Feb 2025",
+    deadline: "13 Feb 2025",
     isopen:false
   },
   
