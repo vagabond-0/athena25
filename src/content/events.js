@@ -74,10 +74,10 @@ const eventsDetails = [
   {
     id: "ByteBug",
     name: "ByteBug",
-    details: "A debugging competition with puzzles",
+    details: "ByteBug is a high-stakes debugging challenge where logic meets speed. Work in teams to unravel broken code, identify hidden flaws, and implement quick fixes under pressure. Put your problem-solving skills to the test in this intense competition. Overcome the bugs, race against time, and secure your victory!",
     date: "15 February, 2025",
-    posters: ["/events/ByteBug/logo.jpeg",
-              "/events/ByteBug/guidelines.jpeg"],
+    posters: ["/events/ByteBug/logo.jpg",
+              "/events/ByteBug/guidelines.jpg"],
     price: "150 RS",
     coordinators: [
       { name: "Athila", phone: " 7034551438" },
@@ -121,7 +121,7 @@ const eventsDetails = [
     isopen:false
   },
   {
-    id: "Red-Handed",
+    id: "Red-handed",
     name: "Red-Handed",
     details: "....",
     date: "15 feb 2025",
