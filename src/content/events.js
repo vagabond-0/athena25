@@ -91,7 +91,7 @@ const eventsDetails = [
   {
     id: "League-of-Ludo",
     name: "League-of-Ludo",
-    details: "--",
+    details: "LEAGUE OF LUDO is a life-sized Ludo board competition where players become the game pieces! Each move comes with unexpected challenges, twists, and power-ups. Solve fun tasks, outplay your opponents, and race to victory in this exciting showdown!",
     date: "16 Feb 2025",
     posters: ["/events/League-of-Ludo/logo.jpeg",
               "/events/League-of-Ludo/guidelines.jpeg"],
@@ -134,7 +134,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/red-handed",
     deadline: "14 Feb 2025",
-    isopen:true
+    isopen:false
   },
   
   
