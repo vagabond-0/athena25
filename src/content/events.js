@@ -120,6 +120,23 @@ const eventsDetails = [
     deadline: "14 Feb 2025",
     isopen:false
   },
+  {
+    id: "Red-Handed",
+    name: "Red-Handed",
+    details: "....",
+    date: "15 feb 2025",
+    posters: ["/events/Re-Action-Rush/logo.jpeg",
+              "/events/Re-Action-Rush/guidelines.jpeg"],
+    price: "60 / team",
+    coordinators: [
+      { name: "Sherin", phone: "7306564995" },
+      { name: "Renah", phone: "96053 01454" },
+    ],
+    link: "https://makemypass.com/red-handed",
+    deadline: "14 Feb 2025",
+    isopen:true
+  },
+  
   
 ];
 export default eventsDetails;
