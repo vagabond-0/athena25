@@ -127,7 +127,7 @@ const eventsDetails = [
     date: "15 feb 2025",
     posters: ["/events/Red-Handed/logo.jpeg",
               "/events/Red-Handed/guidelines.jpeg"],
-    price: "50 per head",
+    price: "50 RS",
     coordinators: [
       { name: "Ramjith M M", phone: "9188145715" },
       { name: "Devanandha T P", phone: "8139044030" },
