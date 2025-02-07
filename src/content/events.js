@@ -108,7 +108,7 @@ const eventsDetails = [
     name: "Re-Action-Rush",
     details: "Put your skills to the test at Re-Action Rush, an electrifying challenge at ATHENA ‘25—the Annual Technical Fest of ISTE TKMCE. Dive into a high-stakes race where you must solve puzzles, balance reactions, and think fast to complete the challenge before time runs out. Precision, speed, and a sharp mind are your best tools—every second counts, and only the best will prevail.",
     date: "15 feb 2025",
-    posters: ["/events/Re-Action-Rush/logo.jpg",
+    posters: ["/events/Re-Action-Rush/logo.png",
               "/events/Re-Action-Rush/guidelines.jpg"],
     price: "60 / team",
     coordinators: [
