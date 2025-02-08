@@ -45,7 +45,7 @@ const Footer = () => {
               </button>
             </a>
             <a
-              href="#"
+              href="https://x.com/tkmceiste"
               className="transform hover:scale-110 transition-transform duration-300"
             >
               <button className="p-3 rounded-full hover:bg-yellow-400 transition-colors duration-300">
