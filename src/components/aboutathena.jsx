@@ -15,14 +15,15 @@ const AboutAthena = () => {
           <p className='mb-4'>
             ISTE TKMCE proudly presents ATHENA '25, a vibrant platform where innovation sparks, creativity thrives, and dreams take flight. It’s where collaboration fuels groundbreaking ideas and talent meets boundless passion.
           </p>
-
+          ATHENA '25 isn’t just an event; it’s a tribute to the dreamers and innovators who dare to push boundaries and redefine the future.
           <p className='mb-4'>
            
           </p>
 
           <div className='mt-8 p-6  rounded-lg backdrop-blur-sm'>
             <h2 className='text-2xl md:text-3xl font-semibold mb-4 text-yellow-300'>
-            ATHENA '25 isn’t just an event; it’s a tribute to the dreamers and innovators who dare to push boundaries and redefine the future.
+            
+            Embrace Change, Empower the Future
             </h2>
           </div>
         </div>
