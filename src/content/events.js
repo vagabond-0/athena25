@@ -13,7 +13,7 @@ const eventsDetails = [
     ],
     link: "https://bit.ly/ImpacTX",
     deadline: "15 February, 2025",
-    isopen:true
+    isopen:false
   },
   {
     id: "SPARKATHON",
