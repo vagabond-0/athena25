@@ -37,7 +37,7 @@ const Footer = () => {
           
           <div className="flex justify-center gap-4 flex-wrap mb-6">
             <a
-              href="https://www.instagram.com/iste_tkmce_/"
+              href="https://www.instagram.com/_athena25_/"
               className="transform hover:scale-110 transition-transform duration-300"
             >
               <button className="p-3 rounded-full hover:bg-yellow-400 transition-colors duration-300">
