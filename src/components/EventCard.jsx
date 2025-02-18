@@ -47,7 +47,7 @@ const EventCard = ({ event, w, e, t, i }) => {
           {selectedEvent.isopen ? 
             <Link to={routePath}>
               <button className="w-full md:w-auto px-6 py-2 bg-[#070616] rounded-full font-semibold uppercase hover:bg-red-700 shadow-md transition-all duration-300 active:transform active:scale-95">
-                Register Now
+                Closed
               </button>
             </Link> :
             <button className="w-full md:w-auto px-6 py-2 bg-[#070616] rounded-full font-semibold uppercase hover:bg-red-700 shadow-md transition-all duration-300 active:transform active:scale-95">
