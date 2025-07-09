@@ -23,7 +23,7 @@ const workshopDetails= [
       { name: "DEVIKA A K", phone: " 7594827955" },
       { name: "DEVIKA D", phone: "85472 60003" },
     ],
-    link: "https://makemypass.com/workshop-on-generative-ai",
+    link: "https://makemypass.com/event/workshop-on-generative-ai-2",
     deadline: "13 Feb 2025",
     isopen:false
   },
