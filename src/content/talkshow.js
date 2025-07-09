@@ -11,7 +11,7 @@ const talkshowDetails = [
                 {name: "Hadya unais", phone:"9072211772"},
                 {name: "Muhammed salih u k", phone:"8086219319"}],
             link: "https://makemypass.com/entrepreneurial-mindset",
-            isopen:true
+            isopen:false
 },
 
 ]

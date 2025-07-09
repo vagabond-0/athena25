@@ -31,7 +31,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/sparkathon",
     deadline: "14 February, 2025",
-    isopen:true
+    isopen:false
   },
   {
     id: "Nature's-Nest",
@@ -50,7 +50,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/natures-nest",
     deadline: "12 February, 2025",
-    isopen:true
+    isopen:false
   },
   {
     id: "Mechmerize",
@@ -68,7 +68,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/mechmerize",
     deadline: "12 February 2025",
-    isopen:true
+    isopen:false
   },
   {
     id: "ByteBug",
@@ -84,7 +84,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/bytebug/",
     deadline: "12 February, 2025",
-    isopen:true
+    isopen:false
   },
   
   {
@@ -101,7 +101,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/league-of-ludo ",
     deadline: "13 Feb 2025",
-    isopen:true
+    isopen:false
   },
   {
     id: "Re-Action-Rush",
@@ -117,7 +117,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/re-action-rush",
     deadline: "14 Feb 2025",
-    isopen:true
+    isopen:false
   },
   {
     id: "Red-handed",
@@ -133,7 +133,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/red-handed",
     deadline: "13 Feb 2025",
-    isopen:true
+    isopen:false
   },
   
   
