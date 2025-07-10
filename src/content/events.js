@@ -12,7 +12,7 @@ const eventsDetails = [
       { name: "Aswin", phone: "7907583776" },
     ],
     link: "https://makemypass.com/event/impact-x",
-    deadline: "26 July, 2025",
+    deadline: "22 July, 2025",
     isopen:true
   },
   {
@@ -38,7 +38,7 @@ const eventsDetails = [
     name: "Nature's Nest",
     details:
       "Nature’s Nest is an exciting design challenge that celebrates diversity in architecture and construction technology, urging participants to break free from traditional boundaries and unleash their creativity. The event invites you to reimagine modern design by exploring innovative solutions and shaping the future of architecture with fresh, forward-thinking approaches.",
-    date: "13 - 16 February, 2025",
+    date: "20 - 26 July, 2025",
     posters: [
       "/events/Nature's-Nest/logo.jpeg",
       "/events/Nature's-Nest/guidelines.jpeg",
@@ -49,8 +49,8 @@ const eventsDetails = [
       { name: "Roshmina", phone: "7012682980" },
     ],
     link: "https://makemypass.com/natures-nest",
-    deadline: "12 February, 2025",
-    isopen:false
+    deadline: "18 July, 2025",
+    isopen:true
   },
   {
     id: "Mechmerize",
