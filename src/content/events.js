@@ -41,7 +41,7 @@ const eventsDetails = [
     date: "20 - 26 July, 2025",
     posters: [
       "/events/Nature's-Nest/logo.jpg",
-      "/events/Nature's-Nest/guidelines.jpeg",
+      "/events/Nature's-Nest/guideline.jpeg",
     ],
     price: "200 RS per TEAM",
     coordinators: [
