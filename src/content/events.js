@@ -5,14 +5,14 @@ const eventsDetails = [
     details:
       "IMPACT X is an exciting competition where participants tackle real-world problems with innovative, technology driven solutions. Centered on the theme “Inventions & Innovations for Social Impact,” this event brings together creative minds to develop impactful ideas and pitch them to a panel of judges, showcasing their potential to drive meaningful change.",
     date: "15 February, 2025",
-    posters: ["/events/ImpacT-X/logo.jpeg", "/events/ImpacT-X/guidelines.jpeg"],
+    posters: ["/events/ImpacT-X/logo.jpg", "/events/ImpacT-X/guidelines.jpg"],
     price: "200 RS",
     coordinators: [
       { name: "Parthiv", phone: " 8075451097" },
       { name: "Aswin", phone: "7907583776" },
     ],
     link: "https://makemypass.com/event/impact-x",
-    deadline: "15 February, 2025",
+    deadline: "26 July, 2025",
     isopen:true
   },
   {
