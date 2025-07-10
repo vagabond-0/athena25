@@ -40,16 +40,17 @@ const eventsDetails = [
       "Nature’s Nest is an exciting design challenge that celebrates diversity in architecture and construction technology, urging participants to break free from traditional boundaries and unleash their creativity. The event invites you to reimagine modern design by exploring innovative solutions and shaping the future of architecture with fresh, forward-thinking approaches.",
     date: "20 - 26 July, 2025",
     posters: [
-      "/events/Nature's-Nest/logo.jpeg",
+      "/events/Nature's-Nest/logo.jpg",
       "/events/Nature's-Nest/guidelines.jpeg",
     ],
-    price: "200 RS",
+    price: "200 RS per TEAM",
     coordinators: [
       { name: "Rabia S", phone: " 7902655814" },
       { name: "Roshmina", phone: "7012682980" },
+      { name: "Asif Khan", phone: "6282981960" },
     ],
     link: "https://makemypass.com/event/natures-nest-1",
-    deadline: "18 July, 2025",
+    deadline: "19 July, 2025",
     isopen:true
   },
   {
