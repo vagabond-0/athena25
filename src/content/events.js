@@ -48,7 +48,7 @@ const eventsDetails = [
       { name: "Rabia S", phone: " 7902655814" },
       { name: "Roshmina", phone: "7012682980" },
     ],
-    link: "https://makemypass.com/natures-nest",
+    link: "https://makemypass.com/event/natures-nest-1",
     deadline: "18 July, 2025",
     isopen:true
   },
