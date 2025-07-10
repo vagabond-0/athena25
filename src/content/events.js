@@ -11,9 +11,9 @@ const eventsDetails = [
       { name: "Parthiv", phone: " 8075451097" },
       { name: "Aswin", phone: "7907583776" },
     ],
-    link: "https://bit.ly/ImpacTX",
+    link: "https://makemypass.com/event/impact-x",
     deadline: "15 February, 2025",
-    isopen:false
+    isopen:true
   },
   {
     id: "SPARKATHON",
