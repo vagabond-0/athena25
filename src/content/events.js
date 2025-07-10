@@ -116,7 +116,7 @@ const eventsDetails = [
       { name: "Sherin", phone: "7306564995" },
       { name: "Renah", phone: "96053 01454" },
     ],
-    link: "https://makemypass.com/re-action-rush",
+    link: "https://makemypass.com/event/re-action-rush-1",
     deadline: "14 Feb 2025",
     isopen:false
   },
