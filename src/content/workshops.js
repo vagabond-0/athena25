@@ -8,8 +8,8 @@ const workshopDetails= [
         deadline : "24 July, 2025",
         price : "₹500 for Non-ISTE members \n ₹400 for ISTE members",
         coordinators : [{name: "Fardeen", phone:"7736055843"},{name: "Nafih", phone:"8113920470"}],
-        link: "https://makemypass.com/3d-printing-workshop-2",
-        isopen:false
+        link: "https://makemypass.com/event/3d-printing-workshop-with-solidworks",
+        isopen:true
 },
 {
     id: "Generative-ai",
