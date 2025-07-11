@@ -114,9 +114,9 @@ const eventsDetails = [
     name: "Re-Action-Rush",
     details:
       "Put your skills to the test at Re-Action Rush, an electrifying challenge at ATHENA ‘25—the Annual Technical Fest of ISTE TKMCE. Dive into a high-stakes race where you must solve puzzles, balance reactions, and think fast to complete the challenge before time runs out. Precision, speed, and a sharp mind are your best tools—every second counts, and only the best will prevail.",
-    date: "15 feb 2025",
+    date: "26 July 2025",
     posters: [
-      "/events/Re-Action-Rush/logo.png",
+      "/events/Re-Action-Rush/logo.jpg",
       "/events/Re-Action-Rush/guidelines.jpg",
     ],
     price: "60 / team",
@@ -125,8 +125,8 @@ const eventsDetails = [
       { name: "Renah", phone: "96053 01454" },
     ],
     link: "https://makemypass.com/event/re-action-rush-1",
-    deadline: "14 Feb 2025",
-    isopen: false,
+    deadline: "25 July 2025",
+    isopen:true,
   },
   {
     id: "Red-handed",
