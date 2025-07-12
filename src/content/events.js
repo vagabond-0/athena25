@@ -20,19 +20,19 @@ const eventsDetails = [
     name: "SPARKATHON",
     details:
       "SPARKATHON is a dynamic problem-solving challenge that puts your technical skills and strategic thinking to the test. Participants will tackle a series of intense tasks, pushing their limits in logic, innovation, and adaptability. Compete, overcome obstacles, and prove your mastery in this thrilling battle of intellect.",
-    date: "16 FEBRUARY,2025",
+    date: "27 July,2025",
     posters: [
-      "/events/SPARKATHON/logo.png",
-      "/events/SPARKATHON/guidelines.png",
+      "/events/SPARKATHON/logo.jpg",
+      "/events/SPARKATHON/guidelines.jpg",
     ],
     price: "50 RS",
     coordinators: [
       { name: "NADHRAN", phone: "7736003200" },
       { name: "ASWIN JP", phone: "9207150930" },
     ],
-    link: "https://makemypass.com/sparkathon",
-    deadline: "14 February, 2025",
-    isopen: false,
+    link: "https://makemypass.com/event/sparkathon-1",
+    deadline: "25 July, 2025",
+    isopen: true,
   },
   {
     id: "Nature's-Nest",
@@ -102,7 +102,7 @@ const eventsDetails = [
     ],
     price: "80 / team",
     coordinators: [
-      { name: "Sneha ", phone: "7356492394" },
+      { name: "Sachin", phone: "8590771614" },
       { name: "Suryaja", phone: "79079 37651" },
     ],
     link: "https://makemypass.com/event/league-of-ludo- ",
