@@ -87,7 +87,7 @@ const eventsDetails = [
     ],
     link: "https://makemypass.com/event/byte-bug/",
     deadline: "24 July, 2025",
-    isopen: false,
+    isopen: true,
   },
 
   {
