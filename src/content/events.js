@@ -95,7 +95,7 @@ const eventsDetails = [
     name: "League-of-Ludo",
     details:
       "LEAGUE OF LUDO is a life-sized Ludo board competition where players become the game pieces! Each move comes with unexpected challenges, twists, and power-ups. Solve fun tasks, outplay your opponents, and race to victory in this exciting showdown!",
-    date: "16 Feb 2025",
+    date: "27 July 2025",
     posters: [
       "/events/League-of-Ludo/logo.jpg",
       "/events/League-of-Ludo/guidelines.jpg",
@@ -106,8 +106,8 @@ const eventsDetails = [
       { name: "Suryaja", phone: "79079 37651" },
     ],
     link: "https://makemypass.com/league-of-ludo ",
-    deadline: "13 Feb 2025",
-    isopen: false,
+    deadline: "24 July 2025",
+    isopen: true,
   },
   {
     id: "Re-Action-Rush",
