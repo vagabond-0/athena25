@@ -105,7 +105,7 @@ const eventsDetails = [
       { name: "Sneha ", phone: "7356492394" },
       { name: "Suryaja", phone: "79079 37651" },
     ],
-    link: "https://makemypass.com/league-of-ludo ",
+    link: "https://makemypass.com/event/league-of-ludo- ",
     deadline: "24 July 2025",
     isopen: true,
   },
