@@ -133,7 +133,7 @@ const eventsDetails = [
     name: "Red-Handed",
     details:
       "RED HANDED is an exciting murder mystery challenge where teams must follow cryptic clues and piece together evidence to solve a series of chilling crimes. As the investigation unfolds, every detail becomes crucial, and every second counts. Decode the secrets, connect the clues, and expose the truth before the case goes cold.",
-    date: "15 feb 2025",
+    date: "26 July 2025",
     posters: [
       "/events/Red-Handed/logo.jpg",
       "/events/Red-Handed/guidelines.jpg",
@@ -143,9 +143,9 @@ const eventsDetails = [
       { name: "Ramjith M M", phone: "9188145715" },
       { name: "Devanandha T P", phone: "8139044030" },
     ],
-    link: "https://makemypass.com/red-handed",
-    deadline: "13 Feb 2025",
-    isopen: false,
+    link: "https://makemypass.com/event/red-handed-2",
+    deadline: "25 July 2025",
+    isopen: true,
   },
 ];
 export default eventsDetails;
