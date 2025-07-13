@@ -62,7 +62,7 @@ const eventsDetails = [
     date: "27 July, 2025",
     posters: [
       "/events/Mechmerize/logo.jpg",
-      "/events/Mechmerize/guidelines.jpg",
+      "/events/Mechmerize/guideline.jpg",
     ],
     price: "200 RS",
     coordinators: [
