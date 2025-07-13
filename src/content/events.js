@@ -59,7 +59,7 @@ const eventsDetails = [
     name: "Mechmerize",
     details:
       "Mechmerize is a competition where you unleash your creativity as you reimagine overlooked materials into extraordinary designs. Collaborate in teams and put your engineering skills to the test in this hands-on, offline event. Showcase your ingenuity and compete against the best and turn imagination into reality!",
-    date: "15 February, 2025",
+    date: "27 July, 2025",
     posters: [
       "/events/Mechmerize/logo.jpg",
       "/events/Mechmerize/guidelines.jpg",
@@ -69,8 +69,8 @@ const eventsDetails = [
       { name: "Navya K M", phone: "7560950436" },
       { name: "Dany James", phone: "9526976445" },
     ],
-    link: "https://makemypass.com/mechmerize",
-    deadline: "12 February 2025",
+    link: "https://makemypass.com/event/mechmerise",
+    deadline: "25 July 2025",
     isopen: false,
   },
   {
