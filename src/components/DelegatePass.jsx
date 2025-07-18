@@ -40,15 +40,12 @@ const DelegatePass = () => {
         <p className="text-white/90 text-lg leading-relaxed max-w-lg mx-auto mb-6">
           Need accommodation during the event? Reserve your room now for a comfortable stay.
         </p>
-        <button 
-          className="bg-transparent text-white border-2 border-white px-8 py-3 rounded-full font-semibold text-xl hover:bg-white hover:text-[#B81033] transition-colors duration-200"
-          onClick={() => setShowMessage(!showMessage)}
-        >
-          Book Room
-        </button>
-        {showMessage && (
-          <p className="text-white mt-4 text-lg">Link will be released soon.</p>
-        )}
+        <button
+  onClick={() => (window.location.href = "https://makemypass.com/event/iste-athena-2025-food-and-accomodation")}
+  className="bg-transparent text-white border-2 border-white px-4 py-2 rounded hover:bg-white hover:text-black transition"
+>
+  Book Room
+</button>
       </motion.div>
     </div>
   );
