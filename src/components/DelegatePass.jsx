@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import React, { useState } from "react";
+import { motion } from "framer-motion";
+import { useInView } from "framer-motion";
 import bgcarnival1 from "../assets/bgcarnival1.jpg";
 
 const DelegatePass = () => {
@@ -13,8 +13,8 @@ const DelegatePass = () => {
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.5 }
-    }
+      transition: { duration: 0.5 },
+    },
   };
 
   return (
@@ -25,27 +25,31 @@ const DelegatePass = () => {
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(${bgcarnival1})`,
         backgroundSize: "cover",
         backgroundPosition: "center",
-        backgroundRepeat: "no-repeat"
+        backgroundRepeat: "no-repeat",
       }}
     >
-      <motion.div 
+      <motion.div
         className="mt-12 pt-12 pb-12 border-t border-b border-white/20"
         variants={itemVariants}
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
       >
-        <h2 className="text-4xl text-white mb-4" style={{ fontFamily: "Retro Signed" }}>
+        <h2
+          className="text-4xl text-white mb-4"
+          style={{ fontFamily: "Retro Signed" }}
+        >
           Food And Accommodation
         </h2>
         <p className="text-white/90 text-lg leading-relaxed max-w-lg mx-auto mb-6">
-          Need accommodation during the event? Reserve your room now for a comfortable stay.
+          Need accommodation during the event? Reserve your room now for a
+          comfortable stay.
         </p>
         <button
-  onClick={() => (window.location.href = "https://makemypass.com/event/iste-athena-2025-food-and-accomodation")}
-  className="bg-transparent text-white border-2 border-white px-4 py-2 rounded hover:bg-white hover:text-black transition"
->
-  Book Room
-</button>
+          onClick={() => (window.location.href = "/food-accommodation")}
+          className="bg-transparent text-white border-2 border-white px-4 py-2 rounded hover:bg-white hover:text-black transition"
+        >
+          Book Room
+        </button>
       </motion.div>
     </div>
   );
