@@ -41,7 +41,7 @@ const FoodAccom = () => {
           Food And Accommodation
         </h2>
         <p className="text-white/90 text-lg leading-relaxed max-w-lg mx-auto mb-6">
-          Need accommodation during the event? Reserve your room now for a
+          Need food and accommodation during the event? Reserve your room now for a
           comfortable stay.
         </p>
         <button
